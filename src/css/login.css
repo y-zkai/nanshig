@@ -1,0 +1,21 @@
+.header { width: 100%; height: 80px; border-bottom: 3px solid #EAF4FA; }
+
+.header img { width: 220px; height: 60px; margin: 10px 0; }
+
+.header span { font-size: 12px; padding: 7px 20px; margin: 25px 0 25px 15px; border: 1px solid #FFB4A8; background-color: #FEF2F2; }
+
+.header a:last-child { background-color: #2F97F0; color: #fff; font-size: 14px; padding: 6px 20px; margin: 25px 0; float: right; border-radius: 3px; }
+
+.login { background-color: #FAFAFA; padding: 20px 0; }
+
+.login .user-login { width: 440px; height: 470px; border: 1px solid #ddd; border-radius: 5px; margin: auto; background-color: #fff; padding: 20px; }
+
+.login .user-login .login-t { height: 58px; border-bottom: 1px solid #ddd; font-size: 18px; line-height: 58px; display: block; position: relative; }
+
+.login .user-login .login-t a { width: 220px; height: 58px; text-align: center; display: inline-block; position: relative; color: #999; border-bottom: 3px solid #2F97F0; }
+
+.login .user-login .login-t a i { position: absolute; border: 10px solid transparent; border-top-color: #2F97F0; display: block; left: 105px; }
+
+.login .user-login .login-t a:hover { text-decoration: none; color: #000; }
+
+.login .user-login .login-t a.active { border-bottom: 3px solid #2F97F0; }
