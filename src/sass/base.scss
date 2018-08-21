@@ -49,6 +49,233 @@ ul{list-style:none;padding:0;margin:0;}
 }
 
 
+// app下载
+.app{
+    background-color:#FFFBEA;color:#ba9c6d;padding:14px 0;
+    i{
+        background:url(../img/ico-info.png) no-repeat;
+        width: 22px;height: 23px;margin-right:10px;
+        display: inline-block;vertical-align: bottom;        
+    }
+    a{
+        margin:0 10px;color:#1cbcb4;
+    }
+
+}
+
+// 登录
+.top-bar{
+    border-bottom:1px solid #f0f0f0;background-color:#fafafa;line-height: 30px;font-size: 12px;
+    .topbar-l{
+        height: 30px;
+        a:hover{
+            color:$color;
+        }
+        span{
+            padding-left:10px;
+            i{
+                vertical-align: middle;
+                display: inline-block;
+                width: 20px;height: 20px;
+                background:url(../img/toplogin.png) no-repeat;
+            }
+            i.qq{
+                background-position:0 0 ;
+            }
+            i.weibo{
+                background-position:-20px 0;
+            }
+            a:hover{
+                i.qq{
+                background-position:-60px 0 ;
+                }
+                i.weibo{
+                    background-position:-80px 0;
+                }
+            }    
+        }        
+    }
+
+    .topbar-r{
+        height: 30px;width: 50%;
+        position:relative;
+
+        .my-order{
+            width: 78px;padding-left:10px;
+            border:1px solid #fafafa;
+            em{
+                display: inline-block;
+                vertical-align: middle;
+                width: 15px;height: 15px;
+                background:url(../img/top_ico.png) no-repeat;
+            }
+            i{
+                display: inline-block;
+                vertical-align: middle;
+                width: 6px;height: 6px;
+                background:url(../img/top_bg.png) 0 0 no-repeat;
+            }
+            a:hover{
+                text-decoration:none;color:$color;
+            }
+            ul{        
+                display: none;                
+            }            
+        }
+        .order1{
+            position:absolute;top:0px;right:180px;
+            em{
+                background-position:-30px -15px;
+            }
+        }
+        .order2{
+            position:absolute;top:0px;right:90px;
+            em{
+                background-position:-45px -15px;
+            }
+        }
+        .order3{
+            position:absolute;top:0px;right:0px;
+            em{
+                background-position:-60px -15px;
+            }
+        }
+        .hover{
+            border:1px solid #eee;background-color:#fff;               
+            ul{        
+                display: block; 
+            }
+        } 
+            
+    }
+}
+
+// 搜索
+.top-logo{
+    height: 100px;font-size: 12px;
+    
+    h2{
+        padding-top:15px;width: 400px;
+    }
+
+    .search{
+        width: 500px;height: 40px;border:2px solid $mainColor;border-radius:30px;margin-top:20px;position:relative;
+        
+        a{
+            font-size: 14px;display: inline-block;
+            line-height: 40px;margin:0 15px;padding:0 10px;background:#fff;
+        }
+        a.shop2{
+            position:absolute;top:40px;left:0px;display: none;
+        }
+        a:hover{
+            text-decoration:none;color:$color;
+        }
+        input{
+            width: 335px;
+        }
+        button{
+            display: inline-block;width: 78px;height: 36px;color:#fff;border-radius:20px;cursor:pointer;background-color:$mainColor;
+        }
+    }
+
+    ul{
+        li{
+            float: left;margin:10px 10px 0 0 ;
+            a:hover{
+                text-decoration:none;color:$color;
+            }
+        }
+    }
+
+    .user-menu{
+        padding:20px 0 40px 50px;
+        
+        em{
+            display: inline-block;
+            vertical-align: middle;
+            width: 20px;height: 20px;
+            margin-left:10px;
+            background:url(../img/top_bg.png) no-repeat;
+        }
+        a:hover{
+                text-decoration:none;color:$color;
+            }
+        .my-mall{
+            width: 110px;height: 38px;border:1px solid #eee;line-height: 38px;background-color:#fafafa;
+            
+            em{
+                background-position:-100px 0;
+            }
+            
+        }   
+
+        .my-cart{
+            width: 125px;height: 38px;border:1px solid #eee;margin-left:6px;line-height: 38px;background-color:#fafafa;
+            
+            em{
+                background-position:-120px 0;
+            }
+            
+        }       
+    }
+    
+}
+
+// 导航
+.nav{
+    background-color: $mainColor;
+
+    li{
+        float: left;height:35px;
+
+        i.lei{
+            display: inline-block;
+            vertical-align: middle;
+            width: 18px;height: 18px;
+            padding-right:10px;
+            background:url(../img/top_bg.png) -182px -186px no-repeat;
+        }
+        i.dapp{
+            display: inline-block;
+            vertical-align: middle;
+            width: 14px;height: 25px;
+            padding-right:10px;
+            background:url(../img/icon_download.png) 8px 0 no-repeat;
+        }
+        a{
+            color:#fff;font-size:16px;line-height: 35px;height:35px;display: inline-block;text-decoration:none;padding:0 18px;
+        }
+        a:hover{
+            background-color:#1280DD;
+        }       
+    }
+    li:first-child{
+        background-color:#1280DD;
+    }
+    li:last-child{
+        float:right;
+    }
+    li:last-child:hover{
+        background-color:#1280DD;
+    }
+      
+    li:nth-child(2){
+        font-weight: bold;
+    }
+    
+    li:first-child,
+    li:last-child{
+        padding:0 10px;
+        a{
+            padding:0 5px;
+        }
+        a:hover{
+            text-decoration:underline;
+        }
+    }
+}
+
 // 底部
 .footer-link{
     background-color:#f4f4f4;height: 340px;width: 100%;font-size:16px;
@@ -127,4 +354,19 @@ ul{list-style:none;padding:0;margin:0;}
         }
     }
     
+}
+
+
+// 注册登录头部
+.header{
+    width: 100%;height: 80px;border-bottom:3px solid #EAF4FA;
+    img{
+        width: 220px;height: 60px;margin: 10px 0;
+    }
+    span{
+        font-size: 12px;padding:7px 20px;margin:25px 0 25px 15px;border:1px solid #FFB4A8;background-color:#FEF2F2;
+    }
+    a:last-child{
+        background-color:$mainColor;color:#fff;font-size: 14px;padding:6px 20px;margin:25px 0;float:right;border-radius:3px;
+    }
 }

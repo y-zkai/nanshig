@@ -1,21 +1,69 @@
-.header { width: 100%; height: 80px; border-bottom: 3px solid #EAF4FA; }
+.nsg-login { background-color: #FAFAFA; padding: 20px 0; }
 
-.header img { width: 220px; height: 60px; margin: 10px 0; }
+.nsg-login .login { width: 440px; height: 470px; border: 1px solid #ddd; border-radius: 5px; margin: auto; background-color: #fff; padding: 20px; }
 
-.header span { font-size: 12px; padding: 7px 20px; margin: 25px 0 25px 15px; border: 1px solid #FFB4A8; background-color: #FEF2F2; }
+.nsg-login .login .login-t { height: 58px; border-bottom: 1px solid #ddd; font-size: 18px; line-height: 58px; display: block; position: relative; }
 
-.header a:last-child { background-color: #2F97F0; color: #fff; font-size: 14px; padding: 6px 20px; margin: 25px 0; float: right; border-radius: 3px; }
+.nsg-login .login .login-t a { width: 220px; height: 58px; text-align: center; display: inline-block; position: relative; color: #999; border-bottom: 3px solid #2F97F0; }
 
-.login { background-color: #FAFAFA; padding: 20px 0; }
+.nsg-login .login .login-t a i { position: absolute; border: 10px solid transparent; border-top-color: #2F97F0; display: block; left: 105px; }
 
-.login .user-login { width: 440px; height: 470px; border: 1px solid #ddd; border-radius: 5px; margin: auto; background-color: #fff; padding: 20px; }
+.nsg-login .login .login-t a:hover { text-decoration: none; color: #000; }
 
-.login .user-login .login-t { height: 58px; border-bottom: 1px solid #ddd; font-size: 18px; line-height: 58px; display: block; position: relative; }
+.nsg-login .login .login-t a.active { border-bottom: 3px solid #2F97F0; }
 
-.login .user-login .login-t a { width: 220px; height: 58px; text-align: center; display: inline-block; position: relative; color: #999; border-bottom: 3px solid #2F97F0; }
+.nsg-login .login .login-c .user-login, .nsg-login .login .login-c .phone-login { padding: 30px 50px 0 40px; font-size: 14px; position: relative; display: none; }
 
-.login .user-login .login-t a i { position: absolute; border: 10px solid transparent; border-top-color: #2F97F0; display: block; left: 105px; }
+.nsg-login .login .login-c .user-login .username, .nsg-login .login .login-c .phone-login .username, .nsg-login .login .login-c .user-login .userpsw, .nsg-login .login .login-c .phone-login .userpsw, .nsg-login .login .login-c .user-login .auth-code, .nsg-login .login .login-c .phone-login .auth-code { width: 348px; height: 50px; border: 1px solid #ddd; }
 
-.login .user-login .login-t a:hover { text-decoration: none; color: #000; }
+.nsg-login .login .login-c .user-login .username label, .nsg-login .login .login-c .phone-login .username label, .nsg-login .login .login-c .user-login .userpsw label, .nsg-login .login .login-c .phone-login .userpsw label, .nsg-login .login .login-c .user-login .auth-code label, .nsg-login .login .login-c .phone-login .auth-code label { padding: 0 20px; line-height: 50px; display: inline-block; }
 
-.login .user-login .login-t a.active { border-bottom: 3px solid #2F97F0; }
+.nsg-login .login .login-c .user-login .username input, .nsg-login .login .login-c .phone-login .username input, .nsg-login .login .login-c .user-login .userpsw input, .nsg-login .login .login-c .phone-login .userpsw input, .nsg-login .login .login-c .user-login .auth-code input, .nsg-login .login .login-c .phone-login .auth-code input { width: 240px; color: #bbbbbb; }
+
+.nsg-login .login .login-c .user-login .auth-code, .nsg-login .login .login-c .phone-login .auth-code { width: 228px; margin-top: 16px; }
+
+.nsg-login .login .login-c .user-login .auth-code input, .nsg-login .login .login-c .phone-login .auth-code input { width: 120px; }
+
+.nsg-login .login .login-c .user-login .random-code, .nsg-login .login .login-c .phone-login .random-code { width: 120px; height: 52px; background-color: #B5CAB5; display: block; line-height: 52px; text-align: center; font-size: 20px; position: absolute; top: 150px; right: 50px; }
+
+.nsg-login .login .login-c .user-login .check, .nsg-login .login .login-c .phone-login .check { padding: 20px 0; font-size: 12px; }
+
+.nsg-login .login .login-c .user-login .check span, .nsg-login .login .login-c .phone-login .check span { color: #bbbbbb; }
+
+.nsg-login .login .login-c .user-login .check a, .nsg-login .login .login-c .phone-login .check a { float: right; }
+
+.nsg-login .login .login-c .user-login .check a:hover, .nsg-login .login .login-c .phone-login .check a:hover { color: #2F97F0; }
+
+.nsg-login .login .login-c .user-login button, .nsg-login .login .login-c .phone-login button { display: block; width: 350px; height: 42px; background-color: #2F97F0; border-radius: 5px; color: #fff; font-size: 16px; font-weight: bold; }
+
+.nsg-login .login .login-c .phone-login { display: block; }
+
+.nsg-login .login .login-c .phone-login .auth-code { margin: 0; }
+
+.nsg-login .login .login-c .phone-login .random-code { top: 82px; right: 50px; }
+
+.nsg-login .login .login-c .phone-login .userpsw { margin-bottom: 16px; }
+
+.nsg-login .login .login-c .phone-login p { padding: 15px 0; line-height: 25px; color: #bbb; font-size: 12px; }
+
+.nsg-login .login .login-c .phone-login p a { display: inline-block; background-color: #21B384; padding: 0 10px; margin: 0 5px; border-radius: 3px; color: #fff; font-weight: bold; text-decoration: none; }
+
+.nsg-login .login .login-b p { padding: 25px 0 15px 50px; color: #000; font-size: 12px; }
+
+.nsg-login .login .login-b .link { margin-left: 40px; }
+
+.nsg-login .login .login-b .link a { display: inline-block; height: 32px; font-size: 12px; padding: 0 10px; }
+
+.nsg-login .login .login-b .link a i { display: inline-block; background: url(../img/login_pic.png) no-repeat; width: 32px; height: 32px; vertical-align: middle; }
+
+.nsg-login .login .login-b .link a i.qq { background-position: 0 0; }
+
+.nsg-login .login .login-b .link a i.wb { background-position: -32px 0; }
+
+.nsg-login .login .login-b .link a:hover { text-decoration: none; color: #2F97F0; }
+
+.nsg-login .login .login-b .link a:hover i.qq { background-position: -96px 0; }
+
+.nsg-login .login .login-b .link a:hover i.wb { background-position: -128px 0; }
+
+.nsg-login .login .login-b .link a:last-child:hover { color: #f55; }

@@ -1,0 +1,179 @@
+@import 'var';
+
+.nsg-reg{
+    background-color:#FAFAFA;padding:60px 0;
+
+    .reg{
+        width: 820px;height: 520px;
+        margin:0px auto;
+        border:1px solid #ddd; 
+        background:#fff;     
+            padding:19px;
+
+        .reg-l{
+            width: 580px;height: 520px;
+            padding-right:19px;
+            border-right:1px solid #ddd;
+
+            h2{
+                text-align:center;
+                padding-bottom:10px;
+                border-bottom:3px solid $mainColor;
+                    position:relative;
+                a{
+                    font-size: 18px;
+                    color:$mainColor;
+                    text-decoration:none;
+                    font-weight:normal;
+
+                }
+
+                i{
+                    position:absolute;
+                    border:10px solid transparent;
+                    border-top-color:$mainColor;
+                    display: block;
+                    left:280px;bottom:-20px;                  
+                }
+            }
+            .phone-login{
+                width: 400px;
+                padding:50px 80px 0 100px;
+                position:relative;
+
+                .username{
+                    width: 398px;height: 50px;
+                    border:1px solid #ddd;
+                    label{
+                        padding:0 20px;
+                        line-height: 50px;
+                        display: inline-block;
+                    }
+                    input{
+                        width: 290px;color:#999bbb;
+                    }
+                }
+
+                .auth-code{
+                    @extend .username;
+                    width: 278px;
+                    
+                    input{
+                        width: 170px;
+                    }
+                }
+
+                .random-code{
+                    width: 120px;height: 52px;
+                    background-color:#B5CAB5;
+                    display: block;
+                    line-height: 52px;
+                    text-align:center;
+                    font-size: 20px;
+                    position:absolute;
+                    top:102px;right:80px;
+                }
+
+                p{
+                    padding:15px 0;
+                    line-height: 25px;
+                    color:#999;
+                    font-size: 12px;
+
+                    a{
+                        display: inline-block;
+                        background-color:#21B384;
+                        padding:0 10px;margin:0 5px;
+                        border-radius:3px;
+                        color:#fff;
+                        font-weight: bold;
+                        text-decoration:none;
+                    }
+                }
+
+                .userpsw{
+                    @extend .username;
+                    margin-bottom:16px;
+                }
+                
+                button{
+                    display: block;
+                    width: 400px;height: 42px;
+                    background-color:$mainColor;
+                    border-radius:5px;
+                    color:#fff;
+                    font-size: 16px;
+                    font-weight: bold;
+                }
+            }
+        } 
+
+        .reg-r{
+            
+            margin-left:20px;
+            width: 200px;height: 500px;
+
+            p{
+                padding:20px 0;
+                color:#000;
+                font-size: 14px;
+            }   
+
+            .link{
+                border-bottom:1px dashed #ddd;
+                padding-bottom:20px;
+                a{
+                    display:inline-block;
+                    height: 42px;
+                    font-size: 12px;
+                    padding:0 10px;
+                    
+                    i{
+                        display: inline-block;
+                        background:url(../img/login_pic.png) no-repeat;
+                        width: 42px;height: 42px;
+                    }
+                    i.qq{
+                        background-position:-126px -32px ;
+                    }
+                    i.wb{
+                        background-position:-168px -32px;
+                    }
+                }
+            }
+            
+            ul{
+                li{
+                    color:#999;
+                    font-size: 12px;
+
+                    i{
+                        display: inline-block;
+                        background:url(../img/login_pic.png) no-repeat;
+                        width: 25px;height: 25px;
+                        vertical-align:middle;
+                        margin:5px 10px;
+                    }
+                }
+                li:nth-child(1) i{
+                    background-position:0px -74px ;
+                }
+                li:nth-child(2) i{
+                    background-position:-30px -74px ;
+                }
+                li:nth-child(3) i{
+                    background-position:-60px -74px ;
+                }
+                li:nth-child(4) i{
+                    background-position:-90px -74px ;
+                }
+                li:nth-child(5) i{
+                    background-position:-120px -74px ;
+                }
+                li:nth-child(6) i{
+                    background-position:-150px -74px ;
+                }
+            }
+        } 
+    }
+}

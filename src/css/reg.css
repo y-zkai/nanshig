@@ -1,0 +1,63 @@
+.nsg-reg { background-color: #FAFAFA; padding: 60px 0; }
+
+.nsg-reg .reg { width: 820px; height: 520px; margin: 0px auto; border: 1px solid #ddd; background: #fff; padding: 19px; }
+
+.nsg-reg .reg .reg-l { width: 580px; height: 520px; padding-right: 19px; border-right: 1px solid #ddd; }
+
+.nsg-reg .reg .reg-l h2 { text-align: center; padding-bottom: 10px; border-bottom: 3px solid #2F97F0; position: relative; }
+
+.nsg-reg .reg .reg-l h2 a { font-size: 18px; color: #2F97F0; text-decoration: none; font-weight: normal; }
+
+.nsg-reg .reg .reg-l h2 i { position: absolute; border: 10px solid transparent; border-top-color: #2F97F0; display: block; left: 280px; bottom: -20px; }
+
+.nsg-reg .reg .reg-l .phone-login { width: 400px; padding: 50px 80px 0 100px; position: relative; }
+
+.nsg-reg .reg .reg-l .phone-login .username, .nsg-reg .reg .reg-l .phone-login .auth-code, .nsg-reg .reg .reg-l .phone-login .userpsw { width: 398px; height: 50px; border: 1px solid #ddd; }
+
+.nsg-reg .reg .reg-l .phone-login .username label, .nsg-reg .reg .reg-l .phone-login .auth-code label, .nsg-reg .reg .reg-l .phone-login .userpsw label { padding: 0 20px; line-height: 50px; display: inline-block; }
+
+.nsg-reg .reg .reg-l .phone-login .username input, .nsg-reg .reg .reg-l .phone-login .auth-code input, .nsg-reg .reg .reg-l .phone-login .userpsw input { width: 290px; color: #999bbb; }
+
+.nsg-reg .reg .reg-l .phone-login .auth-code { width: 278px; }
+
+.nsg-reg .reg .reg-l .phone-login .auth-code input { width: 170px; }
+
+.nsg-reg .reg .reg-l .phone-login .random-code { width: 120px; height: 52px; background-color: #B5CAB5; display: block; line-height: 52px; text-align: center; font-size: 20px; position: absolute; top: 102px; right: 80px; }
+
+.nsg-reg .reg .reg-l .phone-login p { padding: 15px 0; line-height: 25px; color: #999; font-size: 12px; }
+
+.nsg-reg .reg .reg-l .phone-login p a { display: inline-block; background-color: #21B384; padding: 0 10px; margin: 0 5px; border-radius: 3px; color: #fff; font-weight: bold; text-decoration: none; }
+
+.nsg-reg .reg .reg-l .phone-login .userpsw { margin-bottom: 16px; }
+
+.nsg-reg .reg .reg-l .phone-login button { display: block; width: 400px; height: 42px; background-color: #2F97F0; border-radius: 5px; color: #fff; font-size: 16px; font-weight: bold; }
+
+.nsg-reg .reg .reg-r { margin-left: 20px; width: 200px; height: 500px; }
+
+.nsg-reg .reg .reg-r p { padding: 20px 0; color: #000; font-size: 14px; }
+
+.nsg-reg .reg .reg-r .link { border-bottom: 1px dashed #ddd; padding-bottom: 20px; }
+
+.nsg-reg .reg .reg-r .link a { display: inline-block; height: 42px; font-size: 12px; padding: 0 10px; }
+
+.nsg-reg .reg .reg-r .link a i { display: inline-block; background: url(../img/login_pic.png) no-repeat; width: 42px; height: 42px; }
+
+.nsg-reg .reg .reg-r .link a i.qq { background-position: -126px -32px; }
+
+.nsg-reg .reg .reg-r .link a i.wb { background-position: -168px -32px; }
+
+.nsg-reg .reg .reg-r ul li { color: #999; font-size: 12px; }
+
+.nsg-reg .reg .reg-r ul li i { display: inline-block; background: url(../img/login_pic.png) no-repeat; width: 25px; height: 25px; vertical-align: middle; margin: 5px 10px; }
+
+.nsg-reg .reg .reg-r ul li:nth-child(1) i { background-position: 0px -74px; }
+
+.nsg-reg .reg .reg-r ul li:nth-child(2) i { background-position: -30px -74px; }
+
+.nsg-reg .reg .reg-r ul li:nth-child(3) i { background-position: -60px -74px; }
+
+.nsg-reg .reg .reg-r ul li:nth-child(4) i { background-position: -90px -74px; }
+
+.nsg-reg .reg .reg-r ul li:nth-child(5) i { background-position: -120px -74px; }
+
+.nsg-reg .reg .reg-r ul li:nth-child(6) i { background-position: -150px -74px; }
