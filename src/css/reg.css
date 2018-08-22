@@ -12,15 +12,17 @@
 
 .nsg-reg .reg .reg-l .phone-login { width: 400px; padding: 50px 80px 0 100px; position: relative; }
 
-.nsg-reg .reg .reg-l .phone-login .username, .nsg-reg .reg .reg-l .phone-login .auth-code, .nsg-reg .reg .reg-l .phone-login .userpsw { width: 398px; height: 50px; border: 1px solid #ddd; }
+.nsg-reg .reg .reg-l .phone-login .username, .nsg-reg .reg .reg-l .phone-login .auth-code, .nsg-reg .reg .reg-l .phone-login .userpsw { width: 398px; height: 50px; border: 1px solid #ddd; position: relative; }
 
 .nsg-reg .reg .reg-l .phone-login .username label, .nsg-reg .reg .reg-l .phone-login .auth-code label, .nsg-reg .reg .reg-l .phone-login .userpsw label { padding: 0 20px; line-height: 50px; display: inline-block; }
 
 .nsg-reg .reg .reg-l .phone-login .username input, .nsg-reg .reg .reg-l .phone-login .auth-code input, .nsg-reg .reg .reg-l .phone-login .userpsw input { width: 290px; color: #999bbb; }
 
-.nsg-reg .reg .reg-l .phone-login .auth-code { width: 278px; }
+.nsg-reg .reg .reg-l .phone-login .auth-code { width: 278px; position: relative; }
 
 .nsg-reg .reg .reg-l .phone-login .auth-code input { width: 170px; }
+
+.nsg-reg .reg .reg-l .phone-login .test1, .nsg-reg .reg .reg-l .phone-login .test2, .nsg-reg .reg .reg-l .phone-login .test3 { position: absolute; top: 6px; right: 0; padding: 10px; background-color: #FFF5D9; display: block; font-size: 12px; display: none; }
 
 .nsg-reg .reg .reg-l .phone-login .random-code { width: 120px; height: 52px; background-color: #B5CAB5; display: block; line-height: 52px; text-align: center; font-size: 20px; position: absolute; top: 102px; right: 80px; }
 
@@ -28,9 +30,9 @@
 
 .nsg-reg .reg .reg-l .phone-login p a { display: inline-block; background-color: #21B384; padding: 0 10px; margin: 0 5px; border-radius: 3px; color: #fff; font-weight: bold; text-decoration: none; }
 
-.nsg-reg .reg .reg-l .phone-login .userpsw { margin-bottom: 16px; }
+.nsg-reg .reg .reg-l .phone-login .userpsw { margin-bottom: 16px; position: relative; }
 
-.nsg-reg .reg .reg-l .phone-login button { display: block; width: 400px; height: 42px; background-color: #2F97F0; border-radius: 5px; color: #fff; font-size: 16px; font-weight: bold; }
+.nsg-reg .reg .reg-l .phone-login button { display: block; width: 400px; height: 42px; background-color: #2F97F0; border-radius: 5px; color: #fff; font-size: 16px; font-weight: bold; cursor: pointer; }
 
 .nsg-reg .reg .reg-r { margin-left: 20px; width: 200px; height: 500px; }
 

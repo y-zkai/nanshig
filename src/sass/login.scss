@@ -9,37 +9,47 @@
 
         .login-t{
             height: 58px;border-bottom:1px solid #ddd;font-size: 18px;line-height: 58px;display:block;position: relative;
-            a{
-                width: 220px;height: 58px;text-align:center;display:inline-block;position:relative; color:#999;
+            .login-t-l{
+                float:left;
+                width: 220px;height: 58px;
+                text-align:center;
+                position:relative; 
+                color:$mainColor;
                 border-bottom: 3px solid $mainColor;
-                i{
-                    position:absolute;
-                    border:10px solid transparent;
-                    border-top-color:$mainColor;
-                    display: block;
-                    left:105px;                   
-                }
+                cursor:pointer;
             }
-            a:hover{
-                text-decoration:none;color:#000;
+            .login-t-r{
+                @extend .login-t-l;
+                 border-bottom: 0px solid $mainColor;
+                 color:#999;
             }
-            a.active{
-                border-bottom: 3px solid $mainColor;
-            }            
+            
+            i{
+                position:absolute;
+                border:10px solid transparent;
+                border-top-color:$mainColor;
+                display: block;
+                left:105px;                   
+            }
+            i.gle2{
+                display: none;
+                
+            }
+            
         }
         
         .login-c{
             .user-login{
                 padding:30px 50px 0 40px;font-size: 14px;position:relative;
-                display: none;
+                // display: none;
 
                 .username{
-                    width: 348px;height: 50px;border:1px solid #ddd;
+                    width: 348px;height: 50px;border:1px solid #ddd;position:relative;
                     label{
                         padding:0 20px;line-height: 50px;display: inline-block;
                     }
                     input{
-                        width: 240px;color:#bbbbbb;
+                        width: 240px;color:#555;
                     }
                 }
 
@@ -57,7 +67,12 @@
                 }
 
                 .random-code{
-                    width: 120px;height: 52px;background-color:#B5CAB5;display: block;line-height: 52px;text-align:center;font-size: 20px;position:absolute;top:150px;right:50px;
+                    width: 120px;height: 52px;
+                    background-color:#B5CAB5;
+                    display: block;line-height: 52px;
+                    text-align:center;font-size: 20px;
+                    position:absolute;
+                    top:150px;right:50px;
                 }
                 .check{
                     padding:20px 0;font-size: 12px;
@@ -82,8 +97,8 @@
             
             .phone-login{
                 @extend .user-login;
-                // display: none;
-                display: block;
+                display: none;
+                // display: block;
                 
                 .auth-code{
                     margin:0;
@@ -103,6 +118,17 @@
                     }
                 }
 
+            }
+
+            .test1,.test2,.test3,
+            .test4,.test5,.test6{
+                position:absolute;
+                top:6px;right:0;
+                padding:10px;
+                background-color:#FFF5D9;
+                display: block;
+                font-size: 12px;
+                display:none;
             }
         }
 

@@ -44,6 +44,7 @@
                 .username{
                     width: 398px;height: 50px;
                     border:1px solid #ddd;
+                    position:relative;
                     label{
                         padding:0 20px;
                         line-height: 50px;
@@ -57,10 +58,21 @@
                 .auth-code{
                     @extend .username;
                     width: 278px;
+                    position:relative;
                     
                     input{
                         width: 170px;
                     }
+                }
+
+                .test1,.test2,.test3{
+                    position:absolute;
+                    top:6px;right:0;
+                    padding:10px;
+                    background-color:#FFF5D9;
+                    display: block;
+                    font-size: 12px;
+                    display:none;
                 }
 
                 .random-code{
@@ -94,6 +106,7 @@
                 .userpsw{
                     @extend .username;
                     margin-bottom:16px;
+                    position:relative;
                 }
                 
                 button{
@@ -104,6 +117,7 @@
                     color:#fff;
                     font-size: 16px;
                     font-weight: bold;
+                    cursor: pointer;
                 }
             }
         } 
