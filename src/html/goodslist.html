@@ -21,8 +21,8 @@
         <div class="container clearfix">
             <div class="topbar-l fl f12">
                 您好，
-                <a href="login.html">马上登录</a>&nbsp;
-                <a href="reg.html">免费注册</a>
+                <a href="#">马上登录</a>&nbsp;
+                <a href="#">免费注册</a>
                 <span>
                     <a href="#" title="QQ账号登录"><i class="qq"></i></a>
                     <a href="#" title="新浪微博"><i class="weibo"></i></a> 
@@ -59,7 +59,7 @@
         <div class="container clearfix">
             <div class="logo fl">
                 <h2>
-                    <a href="#"><img src="../img/logo.jpg" height="60" width="225"  /></a>
+                    <a href="#"><img src="../img/logo.png" height="35" width="220"  /></a>
                 </h2>               
             </div>
             <div class="fl">
@@ -69,7 +69,7 @@
                     <input type="text" placeholder="搜“型男”试试，新品上线，快来拔草"/>
                     <button>搜索</button>
                 </div>
-                <ul class="clearfix">
+                <ul class="sear clearfix">
                     <li style="color:#999">热门搜索 :</li>
                     <li><a href="#">七分裤</a></li>
                     <li><a href="#">t恤</a></li>
@@ -86,7 +86,24 @@
                     <a href="#">会员中心</a>
                     <i></i>
                     <div class="mall-inc">
-                        
+                        <div class="mall-inc-t"><a href="#">进入会员中心&gt;</a></div>
+                        <div class="mall-inc-c">
+                            <div class="inc inc-cl fl">
+                                <a href="#">站内消息(0)</a>
+                                <a href="#">咨询回复(0)</a>
+                                <a href="#">代金券(0)</a>
+                            </div>
+                            <div class="inc inc-cr fl">
+                                <a href="#">我的订单&gt;</a>
+                                <a href="#">我的收藏&gt;</a>
+                                <a href="#">我的积分&gt;</a>
+                            </div>
+                        </div>
+                        <div class="mall-inc-b clearfix">
+                            <span>最近浏览的商品</span>
+                            <a href="#">全部浏览记录</a>
+                        </div>
+                        <p>暂无商品</p>
                     </div>
                 </div>
                 <div class="my-cart fl">
@@ -94,7 +111,14 @@
                     <a href="#">我的购物车</a>
                     <i></i>
                     <div class="cart-list">
-                        
+                        <h3>最新加入的商品</h3>
+                        <div class="cart-list-c">
+                            <p>您的购物车中暂无商品，赶快选择心爱的商品吧！</p>
+                        </div>
+                        <div class="cart-list-b clearfix">
+                            <p>共<span class="qty" style="color:#f55">1</span>种商品  总计金额：<span class="ab" style="color:#f55">¥</span><span class="sale" style="color:#f55">98.00</span></p>
+                            <button><a href="#">结算购物车中的商品</a></button>
+                        </div>
                     </div>
                 </div>
             </div>           
@@ -104,8 +128,8 @@
         <div class="container">
             <ul class="clearfix">
                 <li><i class="lei"></i><a href="#">所有分类</a></li>
-                <li><a href="#">首页</a></li>
-                <li><a href="#">潮流服装</a></li>
+                <li><a href="../index.html">首页</a></li>
+                <li><a href="goodslist.html">潮流服装</a></li>
                 <li><a href="#">时尚鞋靴</a></li>
                 <li><a href="#">护肤美妆</a></li>
                 <li><a href="#">精选套装</a></li>
@@ -119,21 +143,16 @@
         </div>
     </div>
 
-
     <div class="nsg-goods">
         <div class="container">
             <h3><i class="iconfont icon-shouye" style="color:#bbb"></i>&nbsp;<a href="../index.html">首页</a>&nbsp;&gt;&nbsp;上装</h3>
-            <div class="hot">
-                <p>热门推荐</p>
-                <ul class="hot-goods"></ul>
-            </div>
             <div class="sort clearfix">
-                <ul class="fl clearfix">
+                <ul class="to-sort fl clearfix">
                     <li>排序方式</li>
-                    <li><a href="#">默认</a></li>
-                    <li><a href="#">销量<i class="iconfont icon-jiantouxiajiang"></i></a></li>
-                    <li><a href="#">人气<i class="iconfont icon-jiantouxiajiang"></i></a></li>
-                    <li><a href="#">价格<i class="iconfont icon-jiantouxiajiang"></i></a></li>
+                    <li><span>默认</span></li>
+                    <li class="xiaoL"><span>销量<i class="iconfont icon-jiantouxiajiang"></i></span></li>
+                    <li class="renQi"><span>人气<i class="iconfont icon-jiantouxiajiang"></i></span></li>
+                    <li class="jiaGe"><span>价格<i class="iconfont icon-jiantouxiajiang"></i></span></li>
                     <li><input type="text" />-<input type="text" /><a href="#">确定</a></li>
                 </ul>
                 <div class="grant fl">
@@ -149,9 +168,6 @@
             <ul class="goodslist clearfix"></ul>  
         </div>
     </div>
-
-
-
 
     <div class="footer-link">
         <div class="footer-link-t">
@@ -221,5 +237,7 @@
     </div>
     <script src="../js/jquery-3.3.1.js"></script>
     <script src="../js/goodslist.js"></script>
+    <script src="../js/header.js"></script>
 </body>
 </html>
+

@@ -42,16 +42,17 @@
 			$small.addClass('lx-zoom');
 
 			// 获取小图
-			var $smallImg = $small.children('img');
+			var $smallImg = $small.find('img');
 
 
-		
+			var $Img = $('.goods img').attr('src')
 
 			// 大图与小图的比例
 			var ratio;
 
 			// 创建大图容器,并写入页面
 			var $big = $('<div/>').addClass('lx-bigzoom').appendTo('body');
+
 			var $bigImg
 
 			// 设置大图区域的显示位置：left,top,right(默认),bottom
@@ -97,9 +98,9 @@
 				$zoom.show();
 				$big.show();
 
-
 				// 获取大图url
-				var bigUrl = $smallImg.attr('data-big');
+				var bigUrl = $smallImg.attr('src');
+
 				/*
 					大图相关
 				 */
@@ -168,11 +169,15 @@
 		return this;
 	}
 
-	// $.fn.extend({
-	// 	lxzoom(){},
-	// 	lxcarousel(){},
-	// 	lxtab(){}
-	// 	....
-	// })
+	$('.goods').lxzoom({width:400,height:400});
+
+    $('.small').on('click','img',function(){
+        $('.goods img').attr({
+            'src':this.src,
+            'data-big':this.dataset.big
+        });
+
+    })
+
 })(jQuery);
 

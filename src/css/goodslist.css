@@ -12,7 +12,7 @@
 
 .nsg-goods .sort li { height: 40px; float: left; border-right: 1px solid #ddd; }
 
-.nsg-goods .sort li a { padding: 0 10px; text-decoration: none; }
+.nsg-goods .sort li a, .nsg-goods .sort li span { padding: 0 10px; text-decoration: none; cursor: pointer; }
 
 .nsg-goods .sort li a:hover { color: #2F97F0; }
 
@@ -38,40 +38,38 @@
 
 .nsg-goods .sort .page-top span:hover { background: #2F97F0; border: 1px solid #f55; color: #fff; }
 
-.nsg-goods .goodslist .goods-hover { height: 500px; border: 3px solid #2F97F0; }
+.nsg-goods .goodslist { box-sizing: border-box; clear: both; }
 
-.nsg-goods .goodslist .mainp { top: 0; left: 0; z-index: 10; }
+.nsg-goods .goodslist .goods { cursor: pointer; float: left; width: 300px; height: 370px; margin-top: 10px; }
 
-.nsg-goods .goodslist .main { position: relative; }
+.nsg-goods .goodslist .goods .main { border: 1px solid #f0f0f0; width: 300px; height: 370px; overflow: hidden; position: relative; }
 
-.nsg-goods .goodslist .goods { float: left; width: 298px; height: 370px; border: 1px solid #ddd; margin-top: 10px; position: relative; overflow: hidden; }
+.nsg-goods .goodslist .goods .main img { margin: 10px 29px; }
 
-.nsg-goods .goodslist .goods img { margin: 10px 29px; }
+.nsg-goods .goodslist .goods .main .toup { background: #fff; left: 0; top: 260px; }
 
-.nsg-goods .goodslist .goods .toup { position: absolute; left: 0; top: 260px; }
+.nsg-goods .goodslist .goods .main .toup a:hover { color: #2F97F0; }
 
-.nsg-goods .goodslist .goods .toup a:hover { color: #2F97F0; }
+.nsg-goods .goodslist .goods .main .toup p { padding: 0 10px; }
 
-.nsg-goods .goodslist .goods .toup p { padding: 0 10px; }
+.nsg-goods .goodslist .goods .main .toup .start { padding: 10px; }
 
-.nsg-goods .goodslist .goods .toup .start { padding: 10px; }
+.nsg-goods .goodslist .goods .main .toup .start em { width: 90px; height: 20px; display: inline-block; vertical-align: middle; float: right; background: url(../img/start.png) no-repeat; }
 
-.nsg-goods .goodslist .goods .toup .start em { width: 90px; height: 20px; display: inline-block; vertical-align: middle; float: right; background: url(../img/start.png) no-repeat; }
+.nsg-goods .goodslist .goods .main .toup .start .sale { color: #c00; font-size: 18px; padding-right: 10px; font-weight: bold; }
 
-.nsg-goods .goodslist .goods .toup .start .sale { color: #c00; font-size: 18px; padding-right: 10px; font-weight: bold; }
+.nsg-goods .goodslist .goods .main .toup .contrast { position: relative; height: 30px; }
 
-.nsg-goods .goodslist .goods .toup .contrast { position: relative; height: 30px; }
+.nsg-goods .goodslist .goods .main .toup .contrast span { border: 1px solid #ddd; padding: 2px 10px; margin-right: 10px; position: absolute; top: 0; right: 0; cursor: pointer; }
 
-.nsg-goods .goodslist .goods .toup .contrast span { border: 1px solid #ddd; padding: 2px 10px; margin-right: 10px; position: absolute; top: 0; right: 0; cursor: pointer; }
+.nsg-goods .goodslist .goods .main .toup .moods { width: 201px; height: 50px; margin: 4px auto; border-top: 1px solid #ddd; }
 
-.nsg-goods .goodslist .goods .toup .moods { width: 201px; height: 50px; margin: 4px auto; border-top: 1px solid #ddd; }
+.nsg-goods .goodslist .goods .main .toup .moods li { float: left; width: 100px; height: 50px; border-right: 1px solid #ddd; text-align: center; }
 
-.nsg-goods .goodslist .goods .toup .moods li { float: left; width: 100px; height: 50px; border-right: 1px solid #ddd; text-align: center; }
+.nsg-goods .goodslist .goods .main .toup .moods li span { width: 100px; color: #2F97F0; display: inline-block; padding: 5px 0; }
 
-.nsg-goods .goodslist .goods .toup .moods li span { width: 100px; color: #2F97F0; display: inline-block; padding: 5px 0; }
+.nsg-goods .goodslist .goods .main .toup .moods li:last-child { border-right: none; }
 
-.nsg-goods .goodslist .goods .toup .moods li:last-child { border-right: none; }
+.nsg-goods .goodslist .goods .main .toup .store { height: 40px; line-height: 40px; background: #ddd; text-align: center; }
 
-.nsg-goods .goodslist .goods .toup .store { height: 40px; line-height: 40px; background: #ddd; text-align: center; }
-
-.nsg-goods .goodslist .goods .toup .to-cart { height: 40px; line-height: 40px; font-size: 16px; color: #fff; background: #2F97F0; text-align: center; font-weight: bold; cursor: pointer; }
+.nsg-goods .goodslist .goods .main .toup .to-cart { height: 40px; line-height: 40px; font-size: 16px; color: #fff; background: #2F97F0; text-align: center; font-weight: bold; cursor: pointer; }

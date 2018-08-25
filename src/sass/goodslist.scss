@@ -35,10 +35,11 @@
             height: 40px;
             float:left;
             border-right:1px solid #ddd;
-
-            a{
+            
+            a,span{
                 padding:0 10px;
                 text-decoration:none;
+                cursor:pointer;
             }
             a:hover{
                 color:$mainColor;
@@ -103,39 +104,27 @@
     }
     
     .goodslist{
-
-        .goods-hover{
-            height: 500px;
-            border:3px solid $mainColor;
-            
-            
-        }
-
-        .mainp{
-            top:0;left:0;
-            z-index:10;
-
-        }
-        .main{
-            position:relative;
-
-        }
+            box-sizing:border-box;
+            clear:both;
         .goods{
+            cursor:pointer;
             float:left;
-            width: 298px;height: 370px;
-            border:1px solid #ddd;
+            width: 300px;
+            height: 370px;
             margin-top:10px;
-            position:relative;
+            
+        .main{
+            border:1px solid #f0f0f0; 
+            width: 300px;height: 370px;
             overflow:hidden;
+            position:relative;
 
             img{
                 margin:10px 29px;;
             }
-
-               
+              
             .toup{
-                
-                position:absolute;
+                background:#fff;
                 left:0;top:260px;
                 
                 a:hover{
@@ -211,6 +200,7 @@
                     font-weight: bold;
                     cursor:pointer;
                 }
+            }
             }
         }
     }

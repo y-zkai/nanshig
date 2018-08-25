@@ -1,10 +1,28 @@
-.banner { height: 400px; }
+.carousel-content { width: 100%; height: 400px; position: relative; }
 
-.banner ul { position: relative; width: 100%; height: 100%; }
+.carousel-content .carousel { width: 100%; height: 100%; position: relative; overflow: hidden; border-radius: 5px; }
 
-.banner ul li { position: absolute; width: 100%; height: 100%; background: url(../img/web-1.jpg) center top no-repeat; }
+.carousel-content .carousel li { float: left; position: absolute; display: none; width: 100%; height: 100%; }
 
-.banner ul li a { display: inline-block; left: 50%; top: 0; position: absolute; transform: translate(-50%, 0); width: 776px; height: 300px; background: rgba(0, 0, 0, 0); }
+.carousel-content .carousel li img { width: 100%; height: 100%; background: center no-repeat; }
+
+.carousel-content .carousel li a { display: inline-block; width: 800px; height: 300px; position: absolute; top: 0; left: 300px; }
+
+.carousel-content .carousel-index { position: absolute; bottom: 20px; width: 100%; display: flex; justify-content: center; }
+
+.carousel-content .carousel-index li { float: left; width: 45px; height: 6px; border-radius: 5px; background-color: rgba(10, 10, 10, 0.3); cursor: pointer; margin: 0 3px; }
+
+.carousel-content .carousel-index li.current-index { background-color: #2F97F0; }
+
+.carousel-content .carousel-prev, .carousel-content .carousel-next { position: absolute; top: 0; bottom: 0; cursor: pointer; margin: auto; width: 40px; height: 80px; background: rgba(0, 0, 0, 0.1); }
+
+.carousel-content .carousel-prev img, .carousel-content .carousel-next img { width: 100%; height: 100%; }
+
+.carousel-content .carousel-prev:hover, .carousel-content .carousel-next:hover { background: rgba(0, 0, 0, 0.5); }
+
+.carousel-content .carousel-prev { left: 50px; }
+
+.carousel-content .carousel-next { right: 50px; }
 
 .nsg-goods .goods { height: 488px; margin-bottom: 5px; }
 

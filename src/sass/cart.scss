@@ -1,0 +1,33 @@
+@import 'var';
+
+.cart-top{
+    height: 50px;
+    padding:18px 0;
+    border-bottom:2px solid #ccc;
+    h3{
+        font-size: 24px;height: 30px;
+        font-weight: normal;
+    }
+    p{
+        height: 20px;font-size: 12px;color:#999;line-height: 20px;
+    }
+} 
+
+.cart-table{
+    border:1px solid #ddd;font-size: 12px;
+    th{
+        height: 30px;width: 100px;
+        display: inline-block;
+        
+    }
+
+    th:nth-child(1),td:nth-child(1){
+        width: 30px;
+    }
+    th:nth-child(2),td:nth-child(2){
+        width: 800px;
+    }
+    th:last-child,td:last-child{
+        width: 800px;
+    }
+}

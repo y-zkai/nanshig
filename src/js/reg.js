@@ -26,10 +26,10 @@ jQuery($=>{
     var isok = false;
     $('.btn').on('click',function(){
 
-        if(!isok){
-            return false;
-        }
-        // 验证手机号
+        // if(!isok){
+        //     return false;
+        // }
+        // // 验证手机号
         var phone = $('.phone').val();
         if(!/^1[3-9]\d{9}$/.test(phone)){
             $('.test1').css({'display':'block'})
@@ -56,16 +56,16 @@ jQuery($=>{
             $('.test3').css({'display':'none'})
         }
 
-        $.ajax({
-            url:"../api/reg.php",
-            data{
-                username:phone,
-                password:message
-            },
-            success:function(user){
+        // $.ajax({
+        //     url:"../api/reg.php",
+        //     // data:{
+        //     //     'username':phone,
+        //     //     'password':message,
+        //     // },
+        //     success:function(user){
 
-            }
-        })
+        //     }
+        // })
         // 注册成功跳转到主页
         location.href = '../index.html'
     })

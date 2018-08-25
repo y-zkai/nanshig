@@ -3,28 +3,87 @@
 
 
 
-// 轮播图
-.banner{
+.carousel-content{
+    width: 100%;
     height: 400px;
-    // background-position:center;
-    // background-size: contain;
-    // background:url(../img/web-1.jpg) center top no-repeat;
+    position: relative;
 
-    ul{
-        position:relative;
-        width: 100%;height: 100%;
+    .carousel{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+        border-radius: 5px;
 
         li{
-            position:absolute;width: 100%;height: 100%;
-            background:url(../img/web-1.jpg) center top no-repeat;
+            float: left;
+            position: absolute;
+            display: none;
+            width: 100%;
+            height: 100%;
+
+            img{
+                width: 100%;height: 100%;
+                background:center no-repeat;
+            }
 
             a{
-                display: inline-block;left:50%;top:0;position:absolute;transform:translate(-50%,0);
-                width: 776px;height: 300px;background:rgba(0,0,0,0);
+                display:inline-block;
+                width: 800px;height: 300px;
+                position: absolute;
+                top:0;left:300px;
             }
-       }
+        }   
+    }
+
+    .carousel-index{
+        position: absolute;
+        bottom: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        li{
+            float: left;
+            width: 45px;
+            height: 6px;
+            border-radius: 5px;
+            background-color: rgba(10,10,10,0.3);
+            cursor: pointer;
+            margin: 0 3px;
+        }
+
+        li.current-index{
+            background-color: $mainColor;
+        }
+    }
+
+    .carousel-prev,.carousel-next{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        cursor: pointer;
+        margin: auto;
+        width: 40px;
+        height: 80px;
+        background:rgba(0,0,0,.1);
+
+        img{
+            width: 100%;height: 100%;
+        }
+        
+    }
+    .carousel-prev:hover,.carousel-next:hover{
+        background:rgba(0,0,0,.5);
+    }
+    .carousel-prev{
+        left: 50px;
+    }
+    .carousel-next{
+        right: 50px;
     }
 }
+
 
 // 商品
 .nsg-goods{

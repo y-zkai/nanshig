@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>商品详情</title>
+    <link rel="stylesheet" type="text/css" href="../css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../css/font_zv/iconfont.css" />
+    <link rel="stylesheet" type="text/css" href="../css/goods.css" />
+    <link rel="stylesheet" type="text/css" href="../lib/jquery-lxzoom/jquery.lxzoom.css" />
+</head>
+<body>
+    <div class="app">
+        <div class="container">
+            <i></i>
+            男士购APP全新升级，如遇到旧版无法在线下载更新升级，请先卸载旧版，重新下载新版安装，使用更流畅！
+            <a href="https://www.nanshig.com/app/nsg.apk">直接下载新版 &gt;</a>
+            <a href="http://sj.qq.com/myapp/detail.htm?apkName=top.yokey.nsg" target="_blank">应用市场下载 &gt;</a>
+            <a href="https://www.nanshig.com/shengji/index.html" target="_blank">升级更新教程</a>
+        </div>
+    </div>
+    <div class="top-bar">
+        <div class="container clearfix">
+            <div class="topbar-l fl f12">
+                您好，
+                <a href="#">马上登录</a>&nbsp;
+                <a href="#">免费注册</a>
+                <span>
+                    <a href="#" title="QQ账号登录"><i class="qq"></i></a>
+                    <a href="#" title="新浪微博"><i class="weibo"></i></a> 
+                </span>
+            </div>
+            <div class="topbar-r fr clearfix">               
+                <div class="my-order order1 fl">
+                    <em></em>
+                    <a href="#">我的订单</a>
+                    <i></i>
+                    <ul>
+                        <li><a href="#">待付款订单</a></li>
+                        <li><a href="#">待确认收货</a></li>
+                        <li><a href="#">待评价交易</a></li>
+                    </ul>
+                </div> 
+                <div class="my-order order2 fl">
+                    <em></em>
+                    <a href="#">我的收藏</a>
+                    <i></i>
+                    <ul>
+                        <li><a href="#">商品收藏</a></li>
+                        <li><a href="#">店铺收藏</a></li>
+                    </ul>
+                </div>            
+                <div class="my-order order3 fl">
+                    <em></em>
+                    <a href="#">帮助中心</a>
+                </div>       
+            </div>            
+        </div>
+    </div>
+    <div class="top-logo">
+        <div class="container clearfix">
+            <div class="logo fl">
+                <h2>
+                    <a href="#"><img src="../img/logo.png" height="35" width="220"  /></a>
+                </h2>               
+            </div>
+            <div class="fl">
+                <div class="search">
+                    <a href="#" class="shop1">商品</a>
+                    <a href="#" class="shop2">店铺</a>
+                    <input type="text" placeholder="搜“型男”试试，新品上线，快来拔草"/>
+                    <button>搜索</button>
+                </div>
+                <ul class="sear clearfix">
+                    <li style="color:#999">热门搜索 :</li>
+                    <li><a href="#">七分裤</a></li>
+                    <li><a href="#">t恤</a></li>
+                    <li><a href="#">衬衫</a></li>
+                    <li><a href="#">香水</a></li>
+                    <li><a href="#">帆布鞋</a></li>
+                    <li><a href="#">运动休闲</a></li>
+                    <li><a href="#">运动鞋</a></li>
+                </ul>               
+            </div> 
+            <div class="user-menu fl">
+                <div class="my-mall fl">
+                    <em></em>
+                    <a href="#">会员中心</a>
+                    <i></i>
+                    <div class="mall-inc">
+                        <div class="mall-inc-t"><a href="#">进入会员中心&gt;</a></div>
+                        <div class="mall-inc-c">
+                            <div class="inc inc-cl fl">
+                                <a href="#">站内消息(0)</a>
+                                <a href="#">咨询回复(0)</a>
+                                <a href="#">代金券(0)</a>
+                            </div>
+                            <div class="inc inc-cr fl">
+                                <a href="#">我的订单&gt;</a>
+                                <a href="#">我的收藏&gt;</a>
+                                <a href="#">我的积分&gt;</a>
+                            </div>
+                        </div>
+                        <div class="mall-inc-b clearfix">
+                            <span>最近浏览的商品</span>
+                            <a href="#">全部浏览记录</a>
+                        </div>
+                        <p>暂无商品</p>
+                    </div>
+                </div>
+                <div class="my-cart fl">
+                    <em></em>
+                    <a href="#">我的购物车</a>
+                    <i></i>
+                    <div class="cart-list">
+                        <h3>最新加入的商品</h3>
+                        <div class="cart-list-c">
+                            <p>您的购物车中暂无商品，赶快选择心爱的商品吧！</p>
+                            <ul class="shopcar"></ul>
+                        </div>
+                        <div class="cart-list-b">
+                            <p>共<span class="qty" style="color:#c00">1</span>种商品  总计金额：
+                            <span class="ab" style="color:#c00">¥
+                            <span class="total">98.00</span></span></p>
+                            <button><a href="#">结算购物车中的商品</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>           
+        </div>
+    </div>
+    <div class="nav">
+        <div class="container">
+            <ul class="clearfix">
+                <li><i class="lei"></i><a href="#">所有分类</a></li>
+                <li><a href="../index.html">首页</a></li>
+                <li><a href="goodslist.html">潮流服装</a></li>
+                <li><a href="#">时尚鞋靴</a></li>
+                <li><a href="#">护肤美妆</a></li>
+                <li><a href="#">精选套装</a></li>
+                <li><a href="#">时尚T恤</a></li>
+                <li><a href="#">防晒衣</a></li>
+                <li><a href="#">POLO衫</a></li>
+                <li><a href="#">休闲鞋</a></li>
+                <li><a href="#">百搭七分裤</a></li>
+                <li><i class="dapp"></i><a href="#">下载APP</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="nsg-goods">
+        <div class="container">
+            <h3>
+                <i class="iconfont icon-shouye" style="color:#bbb"></i>
+                <a href="../index.html">&nbsp;首页</a>&nbsp;&gt;&nbsp;
+                <a href="../index.html">&nbsp;上装</a>&nbsp;&gt;&nbsp;
+                <a href="../index.html">&nbsp;时尚上装</a>
+                &nbsp;&gt;&nbsp;<span class="title"></span>
+            </h3>
+            <div class="n-goods clearfix">
+                <div class="goods-l fl">
+                    <div class="goods">
+                        <img src="../img/1.jpg" data-big="../img/1.jpg"/>
+                    </div>
+                    <ul class="clearfix small">
+                        <li><img src="../img/1.jpg" data-big=""../img/1.jpg""/></li>
+                        <li><img src="../img/2.jpg" data-big=""../img/2.jpg""/></li>
+                        <li><img src="../img/3.jpg" data-big=""../img/3.jpg""/></li>
+                        <li><img src="../img/4.jpg" data-big=""../img/4.jpg""/></li>
+                    </ul>
+                    <div class="share clearfix">
+                        <a href="#">分享(0)</a>
+                        <a href="#">收藏商品(0)</a>
+                        <a href="#"><input type="checkbox" />加入对比</a>
+                        <a href="#">举报</a>
+                    </div>
+                </div>
+                <div class="goods-c fl">
+                    <h3>秋冬款日系翻领套头毛衣</h3>
+                    <div class="goods-meta">
+                        <div class="goods-price">
+                            <p><label>市 场 价：</label><del style="font-size:14px;font-weight:both">￥<span class="price"></span></del></p>
+                            <p><label>商 城 价：</label><span style="color:#c00;font-weight:both;font-size:18px">￥<span class="sale" ></span></span></p>
+                            <p><label>商品评分：</label><i></i><a href="#">共有<span class="mark" style="color:#c00"></span>条评分</a></p>
+                            <div class="qr-code"></div>
+                        </div>
+                        <div class="serve">
+                            <dl>
+                                <dt>服&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;务:</dt>
+                                <dd>&nbsp;由&nbsp;<a href="#">潮衣格</a> 发货并提供售后服务。18:00 前完成下单，预计<span>( 08月28日 )</span> 送达</dd>
+                            </dl>
+                        </div>
+                        <div class="convey">
+                            <dl>
+                                <dt>配 送 至:</dt>
+                                <dd>&nbsp;广州&nbsp;<b style="font-size:16px">有货</b>&nbsp;免运费</dd>
+                            </dl>
+                        </div>
+                        <div class="color">
+                            <dl>
+                                <dt>颜色:</dt>
+                                <dd>
+                                    <span>黑色</span>
+                                    <span>酒红</span>
+                                    <span>黑色</span>
+                                    <span>藏青色</span>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="size">
+                            <dl>
+                                <dt>尺;码:</dt>
+                                <dd>
+                                    <span>165</span>
+                                    <span>170</span>
+                                    <span>175</span>
+                                    <span>180</span>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="goods-buy clearfix">
+                            <div class="goods-qty fl">
+                                <input type="text" class="qty" value="1"/>
+                                <i class="jia"></i>
+                                <i class="jian"></i>
+                            </div>
+                            <div class="to-car fl">
+                                <i class="iconfont icon-gouwucheman"></i>
+                                <span>添加购物车</span>
+                            </div>
+                            <div class="to-buy fl">
+                                立即购买
+                            </div>
+                            <div class="stock">
+                                您选择的商品库存<span>668</span>件<i></i>
+                            </div>
+                            <div class="">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="goods-r fl">
+                    <h3>潮衣格</h3>
+                    <div class="grade">
+                        <dl>
+                            <dt>综合评分：</dt>
+                            <dd><i></i><span>4.8</span>分</dd>
+                        </dl>
+                    </div>
+                    <ul class="serve">
+                        <li>
+                            <strong>店铺动态评分</strong>&nbsp;&nbsp;&nbsp;&nbsp;与行业相比
+                        </li>
+                        <li>描述相符4.8 分&nbsp;
+                            <span><i class="iconfont icon-jiantoushangsheng"></i>高于</span><b>4%</b>
+                        </li>
+                        <li>服务态度4.9 分&nbsp;
+                            <span><i class="iconfont icon-jiantoushangsheng"></i>高于</span><b>4%</b>
+                        </li>
+                        <li>发货速度4.6 分&nbsp;
+                            <span><i class="iconfont icon-jiantouxiajiang"></i>低于</span><b>1%</b>
+                        </li>
+                    </ul>
+                    <div class="contact">
+                        <dl>
+                            <dt>联系方式：</dt>
+                            <dd></dd>
+                        </dl>
+                    </div><div class="company">
+                        <dl>
+                            <dt>公司名称：</dt>
+                            <dd>潮衣格</dd>
+                        </dl>
+                    </div><div class="site">
+                        <dl>
+                            <dt>所 在 地：</dt>
+                            <dd>江西 南昌市 东湖区</dd>
+                        </dl>
+                    </div><div class="phone">
+                        <dl>
+                            <dt>电&nbsp;&nbsp;&nbsp;&nbsp;话：</dt>
+                            <dd>下载男士购app联系客服</dd>
+                        </dl>
+                    </div>
+                    <div class="into">
+                        <a href="#">进入商家店铺</a>
+                        <a href="#">收藏店铺(0)</a>
+                    </div>
+                    <ul class="map">
+                        <li>
+                            <a href="#"><i></i>店铺地图</a>
+                            <img src="" alt="" />
+                        </li>
+                        <li>
+                            <a href="#"><i></i>店铺二维码</a>
+                            <img src="../img/qr-code.png" alt="" />
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="goods-tab">
+                <div class="tab-header">
+                    <span class="active">商品详情</span>
+                    <span>商品评价(0)</span>
+                    <span>销售记录(0)</span>
+                    <span>购买咨询</span>
+                    <em></em>
+                </div>
+                <div class="tab-content">
+                    <div class="tab">品牌：时尚</div>
+                    <div>
+                        <b>100%&nbsp;</b>好评
+                        <p>共有0人参与评分</p>
+                        <span><i class="iconfont icon-daohangpingjia"></i>&nbsp;评价商品</span>
+                    </div>
+                    <div>购买的价格不同可能是由于店铺往期促销活动引起的，详情可以咨询卖家</div>
+                    <div><em></em><br />因厂家更改商品包装、场地、附配件等不做提前通知，且每位咨询者购买、提问时间等不同。<br />为此，客服给到的回复仅对提问者3天内有效，其他网友仅供参考！给您带来的不变还请谅解，谢谢！<span>我要提问</span></div>
+                </div>
+            </div>
+            <div class="picture">
+                <p>产品参数：<br />
+                上市年份季节: 2017年秋季      上衣款式: 卫衣     材质: 棉涤      袖长: 长袖     裤长: 长裤<br />
+                适用季节: 秋季     适用对象: 青少年      颜色分类: 白色 黑色 军绿色
+                </p>
+                <img src="../img/p1.jpg" alt="" />
+                <img src="../img/p2.jpg" alt="" />
+                <img src="../img/p3.jpg" alt="" />
+                <img src="../img/p4.jpg" alt="" />
+                <img src="../img/p5.jpg" alt="" />
+                <img src="../img/p6.jpg" alt="" />
+            </div>
+        </div>
+    </div>
+    <div class="footer-link">
+        <div class="footer-link-t">
+            <div class="container"></div>
+        </div>
+        <div class="container">
+            <div class="footer-link-b clearfix">
+                <div class="qr-code fl">
+                    <img src="../img/qr-code.png" alt="" />
+                    <p>男士购客服</p>
+                    <p>添加微信号</p>
+                </div>
+                <ul class="fl clearfix">
+                    <li>
+                        <h3>新手指南</h3>
+                        <p><a href="#">找回密码</a></p>
+                        <p><a href="#">注册账号</a></p>
+                        <p><a href="#">交易条款</a></p>
+                    </li>
+                    <li>
+                        <h3>支付配送</h3>
+                        <p><a href="#">网上支付</a></p>
+                        <p><a href="#">配送运费</a></p>
+                        <p><a href="#">配送方式</a></p>
+                    </li>
+                    <li>
+                        <h3>售后服务</h3>
+                        <p><a href="#">售后流程</a></p>
+                        <p><a href="#">售后政策</a></p>
+                        <p><a href="#">售后申请</a></p>
+                    </li>
+                    <li>
+                        <h3>关于我们</h3>
+                        <p><a href="#">公司介绍</a></p>
+                        <p><a href="#">隐私声明</a></p>
+                        <p><a href="#">招贤纳士</a></p>
+                    </li>
+                    <li class="contact-us">
+                        <h3>联系我们</h3>
+                        <p>客服微信：gebuzaishuai</p>
+                        <p>工作日：9:00-20:00</p>
+                        <p><span>意见反馈</span></p>
+                    </li>
+                    <li class="follow-us">
+                        <h3>关注我们</h3>
+                        <i></i>
+                        <i></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <p>
+                <a href="#">友情链接：</a>
+                <a href="#">男士平台</a>
+                <a href="#">男士购APP</a>
+                <a href="#">男士穿搭</a>
+                <a href="#">男士购APP升级</a>
+            </p>
+            <p>Copyright © 2010-2018 男士购 版权所有
+                <a href="#">桂ICP备15008077号-1</a>
+                <a href="#">站长统计</a>
+            </p>
+        </div>
+    </div>
+    <script src="../js/jquery-3.3.1.js"></script>
+    <script src="../lib/jquery-lxzoom/jquery.lxzoom.js"></script>
+    <script src="../js/goods.js"></script>
+    <script src="../js/header.js"></script>
+    <script src="../js/common.js"></script>
+</body>
+</html>
