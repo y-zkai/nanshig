@@ -60,28 +60,29 @@
                 <h3>我的购物车</h3>
                 <p>查看购物车商品清单，增加减少商品数量，并勾选想要的商品进入下一步操作。</p>
             </div>
-            <table>
-                <thead>
+            <div class="table-cart">
+                <ul class="thead clearfix">
+                    <li><input type="checkbox" id="all"/><span >全选</span></li>
+                    <li><span>商品</span></li>
+                    <li><span>单价(元)</span></li>
+                    <li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;数量</span></li>
+                    <li><span>小计(元)</span></li>
+                    <li><span>操作</span></li>
+                </ul>
+                <h4>店铺：潮男搭配师</h4>
+                <table class="table">
                     <tr>
-                        <th><input type="checkbox" />全选</th>
-                        <th>商品</th>
-                        <th>单价(元)</th>
-                        <th>数量</th>
-                        <th>小计(元)</th>
-                        <th>操作</th>
+                    <td><input type="checkbox" /></td>
+                    <td><img src="" alt="" /></td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td><span></span></td>
                     </tr>
-                </thead>
-                <tbody>
-                    <tr>店铺：潮男搭配师</tr>
-                </tbody>
-                <tbody> 
-
-                </tbody>
-                <tfoot>
-                    <tr><td>商品总价：<span></span>元</td></tr>
-                    <tr><td><button>结算</button></td></tr>
-                </tfoot>
-            </table>
+                </table>
+                <div class="cart-total">商品总价（不含运费）<span class="total">0</span>&nbsp;元</div>
+            </div>
+            <div class="suan"><button class="btn">结算</button></div>
         </div>
     </div>
     <div class="footer-link">
@@ -151,8 +152,8 @@
         </div>
     </div>
     <script src="../js/jquery-3.3.1.js"></script>
-    <script src="../js/reg.js"></script>
-    <script src="../js/header.js"></script>
+    <script src="../js/cart.js"></script>
     <script src="../js/common.js"></script>
+    <script src="../js/header.js"></script>
 </body>
 </html>

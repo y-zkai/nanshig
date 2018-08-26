@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50714
 File Encoding         : 65001
 
-Date: 2018-08-21 19:29:00
+Date: 2018-08-26 18:55:58
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -33,28 +33,28 @@ CREATE TABLE `data` (
 -- ----------------------------
 -- Records of data
 -- ----------------------------
-INSERT INTO `data` VALUES ('001', '斯潮 爆款新品大吉大利晚上吃鸡绝地求生短袖宽松潮流体t恤港风男 黑色 M', '../img/g1.jpg', '89.00', '69.00', '0', '0');
-INSERT INTO `data` VALUES ('002', '斯潮港风原宿情侣简约圆领字母印花短袖T恤韩版青少年百搭个性潮 蓝色 M', '../img/g2.jpg', '98.00', '68.00', '0', '0');
-INSERT INTO `data` VALUES ('003', '牛仔裤男修身小脚韩版潮流宽松夏季薄款直筒裤男士休闲裤子九分裤 浅蓝色 M', '../img/g3.jpg', '145.00', '118.00', '0', '0');
-INSERT INTO `data` VALUES ('004', '夏季薄款亚麻短裤男夏天潮流宽松休闲运动5分沙滩裤子男士五分裤 白色 M', '../img/g4.jpg', '80.00', '68.00', '1', '1');
+INSERT INTO `data` VALUES ('001', '斯潮 爆款新品大吉大利晚上吃鸡绝地求生短袖宽松潮流体t恤港风男 黑色 M', '../img/g1.jpg', '89.00', '69.00', '6', '6');
+INSERT INTO `data` VALUES ('002', '斯潮港风原宿情侣简约圆领字母印花短袖T恤韩版青少年百搭个性潮 蓝色 M', '../img/g2.jpg', '98.00', '68.00', '7', '4');
+INSERT INTO `data` VALUES ('003', '牛仔裤男修身小脚韩版潮流宽松夏季薄款直筒裤男士休闲裤子九分裤 浅蓝色 M', '../img/g3.jpg', '145.00', '118.00', '9', '7');
+INSERT INTO `data` VALUES ('004', '夏季薄款亚麻短裤男夏天潮流宽松休闲运动5分沙滩裤子男士五分裤 白色 M', '../img/g4.jpg', '80.00', '68.00', '11', '10');
 INSERT INTO `data` VALUES ('005', '春夏季白色打底衫男韩版修身紧身健身纯棉短袖t恤男士体恤衫潮流 黑色 M', '../img/g5.jpg', '99.00', '78.00', '9', '7');
-INSERT INTO `data` VALUES ('006', '夏季鞋子男学生帆布鞋韩版潮流透气休闲潮鞋百搭小白鞋原宿风板鞋 6999白黑 39', '../img/g6.jpg', '189.00', '168.00', '0', '0');
-INSERT INTO `data` VALUES ('007', '夏季破洞牛仔短裤男士乞丐五分裤日系宽松休闲中裤牛仔四分裤薄潮 浅蓝色 M', '../img/g7.jpg', '118.00', '89.00', '0', '0');
-INSERT INTO `data` VALUES ('008', '夏季男士休闲裤韩版修身小脚裤男裤九分裤薄款长裤子男哈伦裤男潮 灰色 2XL', '../img/g8.jpg', '128.00', '98.00', '3', '1');
-INSERT INTO `data` VALUES ('009', '夏季薄款男士九分裤小脚束脚裤男哈伦裤休闲裤宽松运动裤收腿裤子 黑色 M', '../img/g9.jpg', '168.00', '128.00', '0', '0');
-INSERT INTO `data` VALUES ('010', '新款潮2018春夏男女纯棉情侣印花短袖T恤宽松半袖 港风 黑色 M', '../img/g10.jpg', '92.00', '79.00', '4', '2');
-INSERT INTO `data` VALUES ('011', '斯潮 男士短袖抖音爆款夏季韩版潮流宽松文艺风T恤个性衣服五分袖 红色 S', '../img/g11.jpg', '98.00', '88.00', '5', '2');
-INSERT INTO `data` VALUES ('012', '2017秋冬装男士毛呢大衣韩版英伦男风衣中长款过膝呢子外套西装领 褐色 M', '../img/g12.jpg', '431.00', '218.00', '0', '0');
+INSERT INTO `data` VALUES ('006', '夏季鞋子男学生帆布鞋韩版潮流透气休闲潮鞋百搭小白鞋原宿风板鞋 6999白黑 39', '../img/g6.jpg', '189.00', '168.00', '13', '11');
+INSERT INTO `data` VALUES ('007', '夏季破洞牛仔短裤男士乞丐五分裤日系宽松休闲中裤牛仔四分裤薄潮 浅蓝色 M', '../img/g7.jpg', '118.00', '89.00', '6', '4');
+INSERT INTO `data` VALUES ('008', '夏季男士休闲裤韩版修身小脚裤男裤九分裤薄款长裤子男哈伦裤男潮 灰色 2XL', '../img/g8.jpg', '128.00', '98.00', '3', '3');
+INSERT INTO `data` VALUES ('009', '夏季薄款男士九分裤小脚束脚裤男哈伦裤休闲裤宽松运动裤收腿裤子 黑色 M', '../img/g9.jpg', '168.00', '128.00', '2', '2');
+INSERT INTO `data` VALUES ('010', '新款潮2018春夏男女纯棉情侣印花短袖T恤宽松半袖 港风 黑色 M', '../img/g10.jpg', '92.00', '79.00', '4', '4');
+INSERT INTO `data` VALUES ('011', '斯潮 男士短袖抖音爆款夏季韩版潮流宽松文艺风T恤个性衣服五分袖 红色 S', '../img/g11.jpg', '98.00', '88.00', '5', '5');
+INSERT INTO `data` VALUES ('012', '2017秋冬装男士毛呢大衣韩版英伦男风衣中长款过膝呢子外套西装领 褐色 M', '../img/g12.jpg', '431.00', '218.00', '9', '4');
 INSERT INTO `data` VALUES ('013', '2017秋冬新款风衣男短款韩版青年呢子大衣撞色连帽毛呢外套学生潮 焦糖色 M', '../img/g13.jpg', '320.00', '168.00', '1', '1');
 INSERT INTO `data` VALUES ('014', '冬季呢子外套男士毛呢大衣韩版潮流中长款男风衣双排扣西装领大衣 黑色 M', '../img/g14.jpg', '320.00', '178.00', '3', '2');
-INSERT INTO `data` VALUES ('015', '2017秋冬新款风衣男短款韩版宽松毛呢大衣青年呢子大衣外套衣服潮 浅蓝色 M', '../img/g15.jpg', '322.00', '169.00', '4', '1');
-INSERT INTO `data` VALUES ('016', '2017冬装男风衣中长款韩版潮流鹿皮绒羊羔毛大衣青少年连帽披风潮 黑色 M', '../img/g16.jpg', '240.00', '176.00', '0', '0');
+INSERT INTO `data` VALUES ('015', '2017秋冬新款风衣男短款韩版宽松毛呢大衣青年呢子大衣外套衣服潮 浅蓝色 M', '../img/g15.jpg', '322.00', '169.00', '4', '3');
+INSERT INTO `data` VALUES ('016', '2017冬装男风衣中长款韩版潮流鹿皮绒羊羔毛大衣青少年连帽披风潮 黑色 M', '../img/g16.jpg', '240.00', '176.00', '20', '8');
 INSERT INTO `data` VALUES ('017', '男士冬季外套2017新款韩版潮帅气中长款棉衣学生纯色棉服过膝棉袄 黑色 M', '../img/g17.jpg', '508.00', '258.00', '1', '0');
-INSERT INTO `data` VALUES ('018', '2017新款冬季风衣男中长款韩版风牛角扣毛呢子大衣男外套 卡其色 M', '../img/g18.jpg', '300.00', '189.00', '2', '0');
+INSERT INTO `data` VALUES ('018', '2017新款冬季风衣男中长款韩版风牛角扣毛呢子大衣男外套 卡其色 M', '../img/g18.jpg', '300.00', '189.00', '2', '2');
 INSERT INTO `data` VALUES ('019', '夏季无袖t恤背心男运动宽松韩版大码棉麻坎肩亚麻沙滩休闲汗衫潮 白色 M', '../img/g19.jpg', '118.00', '59.00', '14', '5');
-INSERT INTO `data` VALUES ('020', '原创卫衣男韩版潮流2017秋季新款青少年学生长袖连帽夹克外套 黑色 M', '../img/g20.jpg', '369.00', '188.00', '0', '0');
+INSERT INTO `data` VALUES ('020', '原创卫衣男韩版潮流2017秋季新款青少年学生长袖连帽夹克外套 黑色 M', '../img/g20.jpg', '369.00', '188.00', '1', '1');
 INSERT INTO `data` VALUES ('021', '原创设计迷彩套头连帽卫衣男外套青少年学生宽松嘻哈风秋冬季 迷彩色 M', '../img/g21.jpg', '189.00', '169.00', '6', '3');
-INSERT INTO `data` VALUES ('022', '原创设计机车PU皮衣外套男春秋冬季2017新款休闲百搭青年男装 黑色 M', '../img/g22.jpg', '550.00', '258.00', '4', '1');
+INSERT INTO `data` VALUES ('022', '原创设计机车PU皮衣外套男春秋冬季2017新款休闲百搭青年男装 黑色 M', '../img/g22.jpg', '550.00', '258.00', '4', '4');
 INSERT INTO `data` VALUES ('023', '2017冬季新款棉衣男短款简潮流原创无袖棉服韩版修身型棉袄子外套 军绿色 M', '../img/g23.jpg', '350.00', '248.00', '5', '4');
 INSERT INTO `data` VALUES ('024', '原创棒球领夹克男韩版潮流修身型春秋季2017新款休闲百搭外套 黑色 M', '../img/g24.jpg', '350.00', '198.00', '6', '4');
 INSERT INTO `data` VALUES ('025', '牛仔外套男港仔个性拼色秋冬新款学生原宿bf宽松洗水牛仔夹克衣潮 蓝色 M', '../img/g25.jpg', '278.00', '139.00', '2', '2');
@@ -93,4 +93,27 @@ INSERT INTO `data` VALUES ('057', '2017秋季新款卫衣男韩版潮流学生�
 INSERT INTO `data` VALUES ('058', '2017秋季连帽卫衣男韩版潮流长袖帽衫男士套头个性嘻哈外套潮 灰色 M', '../img/g58.jpg', '218.00', '109.00', '4', '4');
 INSERT INTO `data` VALUES ('059', '2017秋冬新款男士连帽衫加绒保暖卫衣韩版潮流港风外套男青年 灰色 M', '../img/g59.jpg', '272.00', '136.00', '10', '9');
 INSERT INTO `data` VALUES ('060', '2017新款百搭高档男士针织衫韩版潮流开衫宽松外套条纹拼色男毛衣 白色 M', '../img/g60.jpg', '256.00', '199.00', '3', '0');
+
+-- ----------------------------
+-- Table structure for username
+-- ----------------------------
+DROP TABLE IF EXISTS `username`;
+CREATE TABLE `username` (
+  `id` int(3) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) DEFAULT NULL,
+  `password` varchar(255) DEFAULT NULL,
+  `age` int(3) DEFAULT NULL,
+  `gender` varchar(255) DEFAULT NULL,
+  `email` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of username
+-- ----------------------------
+INSERT INTO `username` VALUES ('1', 'laoxie', '123456', null, null, null);
+INSERT INTO `username` VALUES ('2', 'lemon', '123456', null, null, null);
+INSERT INTO `username` VALUES ('3', '13333333331', null, null, null, null);
+INSERT INTO `username` VALUES ('4', '13333333332', null, null, null, null);
+INSERT INTO `username` VALUES ('5', '13800138000', null, null, null, null);
 SET FOREIGN_KEY_CHECKS=1;

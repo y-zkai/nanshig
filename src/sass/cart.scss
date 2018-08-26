@@ -1,5 +1,7 @@
 @import 'var';
 
+
+
 .cart-top{
     height: 50px;
     padding:18px 0;
@@ -13,21 +15,100 @@
     }
 } 
 
-.cart-table{
+.table-cart{
     border:1px solid #ddd;font-size: 12px;
-    th{
-        height: 30px;width: 100px;
-        display: inline-block;
-        
+    h4{
+        height: 40px;line-height: 40px;padding-left:10px;
+        border-bottom:1px solid #ddd;
+        background:#DAF0FE;
+    }
+    .thead{
+        border-bottom:1px solid #ddd; 
+        li{
+            height: 40px;width: 100px;
+            line-height: 40px;
+            float:left; 
+        }
+    }
+    td{
+        width: 100px;
     }
 
-    th:nth-child(1),td:nth-child(1){
-        width: 30px;
+    li:nth-child(1),td:nth-child(1){
+        width: 60px;
+        text-align:center;
     }
-    th:nth-child(2),td:nth-child(2){
-        width: 800px;
+    li:nth-child(2),td:nth-child(2){
+        width: 770px;
     }
-    th:last-child,td:last-child{
-        width: 800px;
+    li:nth-child(2){
+        text-align:center;
+    }
+    li:last-child,td:last-child{
+        width: 66px;
+    }
+
+    
+    .table{
+        border:none;
+        tr{
+            border-bottom:1px solid #ddd;
+            td{
+                height: 50px;padding:10px 0;
+                img{
+                    width: 50px;height: 50px;
+                    margin-right:10px;
+                    display: inline-block;
+
+                    
+                }
+                input{
+                    width: 20px;height: 15px;
+                    border:1px solid #ddd;
+                    // display: inline-block;
+                    padding: 5px;
+                }
+
+                .jia,.jian{
+                    padding:0 5px;border:1px solid #ddd;
+                    cursor:pointer;
+                }
+                .jia:hover,.jian:hover{
+                    background:$mainColor;
+                    color:#fff;
+                }
+            }
+            td.delet{
+                cursor:pointer;
+            }
+
+        }
+    }
+
+    .cart-total{
+        height: 50px;font-size: 16px;
+        line-height: 50px;
+        background:#F9F9F9;
+        border-bottom:3px solid #ddd;
+        text-align:right;
+        padding-right:20px;
+        span{
+            color:$mainColor;
+            font-size: 20px;
+        }
     }
 }
+    .suan{
+        height: 90px;
+        button{
+            padding:10px 20px;
+            background:$mainColor;
+            margin:20px 40px;
+            float:right;
+            font-size: 16px;
+            font-weight: bold;
+            color:#fff;
+            cursor:pointer;
+        }
+        
+    }

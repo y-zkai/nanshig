@@ -1,9 +1,3 @@
-/* 
-* @Author: Marte
-* @Date:   2018-08-24 11:38:31
-* @Last Modified by:   Marte
-* @Last Modified time: 2018-08-24 22:25:26
-*/
 
 jQuery($=>{   
 
@@ -21,7 +15,7 @@ jQuery($=>{
         goods[arr[0]] = decodeURI(arr[1]);
     });
     
-    console.log(params)
+    // console.log(params)
 
     $('h3 .title').html(goods.name);
     $('.goods img').attr('src',goods.imgurl);
@@ -55,68 +49,74 @@ jQuery($=>{
         $(this).addClass('hover');
     })
 
-    $('.to-car').on('click',function(){
-        addCar();
-        var currentGoods =  goodslist.filter(function(item){
-            return item.id === goods.id;
-        });
 
-        // 商品存在，在原有数量上加上现在添加的商品数量
-        if(currentGoods.length>0){
-            currentGoods[0].qty = currentGoods[0].qty*1 + input.value*1;
-        }
-        // 商品不存在，添加商品
-        else{   
-            var toCar = {
-                id:goods.id,
-                imgurl:goods.imgurl,
-                name:goods.name,
-                sale:goods.sale,
-                qty:input.value
-            }
-            // 当前商品添加到数组
-            goodslist.push(toCar);
-        }
-        // 添加cookie
-        Cookie.set('goodslist',JSON.stringify(goodslist));
-    })
-
-    var goodslist = Cookie.get('goodslist');
-
-    if(goodslist === ''){
-        goodslist = [];
-    }else{
-        goodslist = JSON.parse(goodslist);        
-    }
     
-    
+    // // 获取cookie
+    // var goodslist = Cookie.get('goodslist');
 
-    // 计算总价
-    var total = 0;
-    for(var i=0;i<goodslist.length;i++){        
-        total += goodslist[i].sale * goodslist[i].qty;
-    }
+    // if(goodslist === ''){
+    //     goodslist = [];
+    // }else{
+    //     goodslist = JSON.parse(goodslist);        
+    // }
 
-    $('.total').html(total)
+    // // 计算总价
+    // var total = 0;
+    // for(var i=0;i<goodslist.length;i++){        
+    //     total += goodslist[i].sale * goodslist[i].qty;
+    // }
 
-    var shopcar = document.querySelector('.shopcar');
-    function addCar(){
-        var res = goodslist.map((item,idx)=>{
-            return `<li>
-                <img src="${goodslist[idx].imgurl}"/>
-                <div class="goodsname">${goodslist[idx].name}</div>
-                <div class="goodsp">
-                    <span>${goodslist[idx].sale}</span>&times;
-                    <span>${goodslist[idx].qty}</span>
-                    <p class="remove">删除</p>
-                </div>
-            </li>`
-        }).join('');
+    // $('.total').html(total)
+
+    // // 添加商品渲染到购物车列表
+    // var shopcar = document.querySelector('.shopcar');
+    // var carlist = document.querySelector('.car-list');
+    // function addCar(){
+    //     var res = goodslist.map((item,idx)=>{
+    //         return `<li>
+    //             <img src="${goodslist[idx].imgurl}"/>
+    //             <div class="goodsname">${goodslist[idx].name}</div>
+    //             <div class="goodsp">
+    //                 <span>${goodslist[idx].sale}</span>&times;
+    //                 <span>${goodslist[idx].qty}</span>
+    //                 <span class="remove">删除</span>
+    //             </div>
+    //         </li>`
+    //     }).join('');
        
-        // $('.shopcar').html(res)
-        shopcar.innerHTML = res ;       
-    }
-    addCar();
+    //     shopcar.innerHTML = res ;       
+    // }
+    // addCar();
+
+    // // 点击添加购物车
+    // $('.to-car').on('click',function(){console.log(666)
+        
+    //     var currentGoods =  goodslist.filter(function(item){
+    //         return item.id === goods.id;
+    //     });
+
+    //     // 商品存在，在原有数量上加上现在添加的商品数量
+    //     if(currentGoods.length>0){
+    //         currentGoods[0].qty = currentGoods[0].qty*1 + input.value*1;
+    //     }
+    //     // 商品不存在，添加商品
+    //     else{   
+    //         var toCar = {
+    //             id:goods.id,
+    //             imgurl:goods.imgurl,
+    //             name:goods.name,
+    //             sale:goods.sale,
+    //             qty:input.value
+    //         }
+    //         // 当前商品添加到数组
+    //         goodslist.push(toCar);
+    //     }
+    //     addCar();
+    //     // 添加cookie
+    //     Cookie.set('goodslist',JSON.stringify(goodslist));
+    // });
+
+
 
     // 商品详情、评价、销量 鼠标点击切换
     var $tHeader = $('.tab-header span');

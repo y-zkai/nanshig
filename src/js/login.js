@@ -1,44 +1,53 @@
 jQuery($=>{
 
-    $('.login-t-r').on('click',function(){
+
+    let $loginL = $('.login-t-l');
+    let $loginR = $('.login-t-r');
+    let $loginUser = $('.user-login');
+    let $loginPhone = $('.phone-login');
+
+
+    // 用户名登陆和手机号登陆的转换
+    $loginR.on('click',function(){
 
         $(this).css({
             'border-bottom':'3px solid #2F97F0',
             'color':'#2F97F0',
         });
 
-        $('.login-t-l').css({
+        $loginL.css({
             'border-bottom':'none',
             'color':'#999',
         });
 
-        $('.login-t-r i').css({'display':'block'});
-        $('.login-t-l i').css({'display':'none'});
+        $loginR.find('i').css({'display':'block'});
+        $loginL.find('i').css({'display':'none'});
 
-        $('.user-login').css({'display':'none'});
-        $('.phone-login').css({'display':'block'});
+        $loginUser.css({'display':'none'});
+        $loginPhone.css({'display':'block'});
     })
 
-    $('.login-t-l').on('click',function(){
+    $loginL.on('click',function(){
 
         $(this).css({
             'border-bottom':'3px solid #2F97F0',
             'color':'#2F97F0',
         });
 
-        $('.login-t-r').css({
+        $loginR.css({
             'border-bottom':'none',
             'color':'#999',
         });
 
-        $('.login-t-l i').css({'display':'block'});
-        $('.login-t-r i').css({'display':'none'});
-        $('.user-login').css({'display':'block'});
-        $('.phone-login').css({'display':'none'});
+        $loginL.find('i').css({'display':'block'});
+        $loginR.find('i').css({'display':'none'});
+        $loginUser.css({'display':'block'});
+        $loginPhone.css({'display':'none'});
     })
     
-    var $random = $('.random-code');
 
+
+    var $random = $('.random-code');
     // 点击生成新的验证码
     $random.on('click',randomCode);
 
@@ -58,68 +67,118 @@ jQuery($=>{
     }
     randomCode();
 
+
+        var $test4 = $('.test4');
+        var $test5 = $('.test5');
+        var $test6 = $('.test6');
+    // 用户名登录界面
     $('.btn2').on('click',function(){
 
         // 验证用户名
         var uname = $('.uname').val();
-        var test4 = $('.test4')[0];
+        $.ajax({
+            url:"../api/login.php",
+            data:{
+                'username':uname,
+            },
+            success:function(user){
+                if(user === 'no'){
+                    $test4.html('用户名未注册').css('display','block');
+                    return false;
+                }
+                // 验证密码
+                var userpwd = $('.userpwd').val();
+                if(!/^\S{6,20}$/.test(userpwd)){
+                    $test5.css({'display':'block'});
+                    return false;
+                }else{
+                    $test5.css({'display':'none'});
+                }
 
-        // 验证密码
-        var userpwd = $('.userpwd').val();
-        if(!/^\S{6,20}$/.test(userpwd)){
-            $('.test5').css({'display':'block'});
-            return false;
-        }else{
-            $('.test5').css({'display':'none'});
-        }
-
-        // 验证码
-        var ocode = $('.ocode').val();
-        if(ocode != $random.text()){
-            $('.test6').css({'display':'block'});
-            return false;
-        }else{
-            $('.test6').css({'display':'none'});
-        }
+                // 验证码
+                var ocode = $('.ocode').val();
+                var $code2 = $('#code2');
+                if(ocode != $code2.text()){
+                    $test6.css({'display':'block'});
+                    return false;
+                }else{
+                    $test6.css({'display':'none'});
+                }
 
 
-        // 登录成功跳转到主页
-        location.href = '../index.html'
+                // 登录成功跳转到主页
+                location.href = '../index.html'
+            }
+        })
+    
 
     })
 
 
+        
+    var $test1 = $('.test1');
+    var $test2 = $('.test2');
+    var $test3 = $('.test3');
+    
+    // 手机号登录界面
     $('.btn1').on('click',function(){
+
+        // 验证手机号是否注册
+        var phone = $('.phone').val();
+        $.ajax({
+            url:"../api/login.php",
+            data:{
+                'username':phone,
+            },
+            success:function(user){
+                if(user === 'no'){
+                    $test1.html('手机号未注册').css('display','block');
+                    return false;
+                }
+                // 验证验证码
+                var code = $('.code').val();
+                var $code1 = $('#code1')
+                if(code != $code1.text()){
+                    $test2.css({'display':'block'})
+                    return false;
+                }else{
+                    $test2.css({'display':'none'})
+                }
+                // 验证短信
+                var message = $('.message').val();
+                if(!/^\d{6}$/.test(message)){
+                    $test3.css({'display':'block'})
+                    return false;
+                }else{
+                    $test3.css({'display':'none'})
+                }
+
+
+                // 注册成功跳转到主页
+                location.href = '../index.html'
+            }
+        })
+        
+    })
+
+
+    $('input').on('focus',function(){
+        // $test1.css('display','none');
+        $test2.css('display','none');
+        $test3.css('display','none');
+        $test4.css('display','none');
+        $test5.css('display','none');
+        $test6.css('display','none');
+    });
+    $('.phone').on('blur',function(){
         // 验证手机号
         var phone = $('.phone').val();
         if(!/^1[3-9]\d{9}$/.test(phone)){
-            $('.test1').css({'display':'block'})
+            $test1.css({'display':'block'}).html('手机号不正确')
             return false;
         }else{
-            $('.test1').css({'display':'none'})
+            $test1.css({'display':'none'})
         }
-
-        // 验证验证码
-        var code = $('.code').val();
-        if(code != $random.text()){
-            $('.test2').css({'display':'block'})
-            return false;
-        }else{
-            $('.test2').css({'display':'none'})
-        }
-        // 验证短信
-        var message = $('.message').val();
-        var test3 = $('.test3')[0];
-        if(!/^\d{6}$/.test(message)){
-            $('.test3').css({'display':'block'})
-            return false;
-        }else{
-            $('.test3').css({'display':'none'})
-        }
-
-
-        // 注册成功跳转到主页
-        location.href = '../index.html'
     })
 
 })

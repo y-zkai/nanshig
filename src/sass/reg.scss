@@ -64,15 +64,21 @@
                         width: 170px;
                     }
                 }
-
-                .test1,.test2,.test3{
+                
+                .test0,.test1,.test2,.test3{
                     position:absolute;
                     top:6px;right:0;
                     padding:10px;
                     background-color:#FFF5D9;
-                    display: block;
                     font-size: 12px;
                     display:none;
+                }
+                .test0{
+                    top:-45px;
+                    right:-80px;
+                    color:#f00;
+                    font-size: 16px;
+
                 }
 
                 .random-code{

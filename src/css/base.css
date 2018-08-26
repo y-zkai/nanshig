@@ -119,9 +119,11 @@ ul { list-style: none; padding: 0; margin: 0; }
 
 .top-logo ul li a:hover { text-decoration: none; color: #555; }
 
-.top-logo .user-menu { padding: 0px 0 40px 10px; }
+.top-logo .user-menu { padding: 0px 0 10px 40px; }
 
 .top-logo .user-menu em { display: inline-block; vertical-align: middle; width: 20px; height: 20px; margin-left: 10px; background: url(../img/top_bg.png) no-repeat; }
+
+.top-logo .user-menu i { font-size: 12px; color: #aaa; }
 
 .top-logo .user-menu a:hover { text-decoration: none; color: #555; }
 
@@ -149,39 +151,45 @@ ul { list-style: none; padding: 0; margin: 0; }
 
 .top-logo .user-menu .my-mall:hover { background: #fff; }
 
+.top-logo .user-menu .my-mall:hover i { transform: rotate(180deg); }
+
 .top-logo .user-menu .my-mall:hover .mall-inc { display: block; }
-
-.top-logo .user-menu .my-cart:hover { background: #fff; }
-
-.top-logo .user-menu .my-cart:hover .cart-list { display: block; }
 
 .top-logo .user-menu .my-cart { width: 125px; height: 38px; border: 1px solid #eee; margin-left: 6px; line-height: 38px; background-color: #fafafa; position: relative; }
 
 .top-logo .user-menu .my-cart em { background-position: -120px 0; }
 
-.top-logo .user-menu .my-cart .cart-list { width: 400px; border: 1px solid #eee; position: absolute; top: 38px; right: -1px; background: #fff; z-index: 2; font-size: 12px; }
+.top-logo .user-menu .my-cart .shu { border-radius: 50%; background: #f00; position: absolute; top: -10px; left: 21px; display: inline-block; width: 20px; height: 20px; font-weight: bold; font-size: 16px; line-height: 20px; text-align: center; color: #fff; }
 
-.top-logo .user-menu .my-cart .cart-list h3 { height: 40px; padding-left: 10px; border-bottom: 1px solid #eee; }
+.top-logo .user-menu .my-cart .car-list { width: 400px; border: 1px solid #ddd; background: #fff; position: relative; top: 0px; right: 276px; z-index: 5; display: none; }
 
-.top-logo .user-menu .my-cart .cart-list .cart-list-c .shopcar { padding: 0 10px; clear: both; }
+.top-logo .user-menu .my-cart .car-list h3 { height: 40px; line-height: 40px; padding-left: 10px; border-bottom: 1px solid #ddd; }
 
-.top-logo .user-menu .my-cart .cart-list .cart-list-c .shopcar li { border-bottom: 1px solid #ddd; height: 70px; }
+.top-logo .user-menu .my-cart .car-list ul.shopcar { width: 400px; }
 
-.top-logo .user-menu .my-cart .cart-list .cart-list-c .shopcar li img { width: 50px; height: 50px; margin: 10px; }
+.top-logo .user-menu .my-cart .car-list ul.shopcar li { border-bottom: 1px solid #ddd; height: 70px; width: 400px; clear: both; }
 
-.top-logo .user-menu .my-cart .cart-list .cart-list-c .shopcar li .goodsname { display: inline-block; width: 200px; line-height: 16px; }
+.top-logo .user-menu .my-cart .car-list ul.shopcar li img { float: left; padding: 0 10px; width: 50px; height: 50px; }
 
-.top-logo .user-menu .my-cart .cart-list .cart-list-c .shopcar li .goodsp { display: inline-block; }
+.top-logo .user-menu .my-cart .car-list ul.shopcar li .goodsname { width: 240px; line-height: 20px; height: 70px; padding-right: 10px; float: left; }
 
-.top-logo .user-menu .my-cart .cart-list .cart-list-b { background: #eee; }
+.top-logo .user-menu .my-cart .car-list ul.shopcar li .goodsp { float: left; width: 60px; height: 70px; vertical-align: top; }
 
-.top-logo .user-menu .my-cart .cart-list .cart-list-b p { height: 20px; text-align: right; padding: 10px 10px 50px 0; line-height: 20px; }
+.top-logo .user-menu .my-cart .car-list .cart-b { background: #eee; height: 70px; width: 400px; overflow: hidden; }
 
-.top-logo .user-menu .my-cart .cart-list .cart-list-b p span.sale, .top-logo .user-menu .my-cart .cart-list .cart-list-b p .ab { font-size: 18px; font-weight: bold; }
+.top-logo .user-menu .my-cart .car-list .cart-b p { text-align: right; padding-right: 10px; height: 30px; line-height: 30px; }
 
-.top-logo .user-menu .my-cart .cart-list .cart-list-b button { position: absolute; bottom: 10px; right: 10px; background: #2F97F0; display: inline-block; height: 30px; border-radius: 5px; }
+.top-logo .user-menu .my-cart .car-list .cart-b p span { color: #c00; font-style: 16px; line-height: 30px; }
 
-.top-logo .user-menu .my-cart .cart-list .cart-list-b button a { color: #fff; padding: 10px; }
+.top-logo .user-menu .my-cart .car-list .cart-b button { float: right; background: #2F97F0; padding: 5px 10px; border-radius: 3px; }
+
+.top-logo .user-menu .my-cart .car-list .cart-b button a { color: #fff; }
+
+.top-logo .user-menu .my-cart:hover { background: #fff; }
+
+.top-logo .user-menu .my-cart:hover i { transform: rotate(180deg); }
+
+.top-logo .user-menu .my-cart:hover .car-list { display: block; }
 
 .logo-top { position: fixed; top: 0; left: 0; height: 50px; padding-top: 5px; }
 

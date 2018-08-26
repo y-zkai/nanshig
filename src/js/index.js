@@ -5,8 +5,8 @@ jQuery($=>{
             conf : {
                 auto : true,
                 needIndexNum : true,
-                animateTiming : 1000,
-                autoTiming : 2000,
+                animateTiming : 2000,
+                autoTiming : 3000,
                 direction : 'right',
             }
         }

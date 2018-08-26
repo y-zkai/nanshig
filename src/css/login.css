@@ -34,7 +34,7 @@
 
 .nsg-login .login .login-c .user-login .check a:hover, .nsg-login .login .login-c .phone-login .check a:hover { color: #2F97F0; }
 
-.nsg-login .login .login-c .user-login button, .nsg-login .login .login-c .phone-login button { display: block; width: 350px; height: 42px; background-color: #2F97F0; border-radius: 5px; color: #fff; font-size: 16px; font-weight: bold; }
+.nsg-login .login .login-c .user-login button, .nsg-login .login .login-c .phone-login button { display: block; width: 350px; height: 42px; background-color: #2F97F0; border-radius: 5px; color: #fff; font-size: 16px; font-weight: bold; cursor: pointer; }
 
 .nsg-login .login .login-c .phone-login { display: none; }
 

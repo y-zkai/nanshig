@@ -201,7 +201,7 @@ ul{list-style:none;padding:0;margin:0;}
     }
 
     .user-menu{
-        padding:0px 0 40px 10px;
+        padding:0px 0 10px 40px;
         
         em{
             display: inline-block;
@@ -209,6 +209,9 @@ ul{list-style:none;padding:0;margin:0;}
             width: 20px;height: 20px;
             margin-left:10px;
             background:url(../img/top_bg.png) no-repeat;
+        }
+        i{
+            font-size: 12px;color:#aaa;
         }
         a:hover{
                 text-decoration:none;color:$color;
@@ -269,17 +272,12 @@ ul{list-style:none;padding:0;margin:0;}
         }
         .my-mall:hover{
             background:#fff;
+            i{transform:rotate(180deg)}
             .mall-inc{
                 display: block;
             }
         } 
-        .my-cart:hover{
-            background:#fff;
-            
-            .cart-list{
-                display: block;
-            }   
-        } 
+       
         
         .my-cart{
             width: 125px;height: 38px;
@@ -292,79 +290,91 @@ ul{list-style:none;padding:0;margin:0;}
             em{
                 background-position:-120px 0;
             }
-
-            .cart-list{
-                width: 400px;
-                border:1px solid #eee;
+            
+            .shu{
+                border-radius:50%;
+                background:#f00;
                 position:absolute;
-                top:38px;right:-1px;
-                background:#fff;z-index:2;
-                font-size: 12px;
-                // display:none;
-
+                top:-10px;left:21px;
+                display: inline-block;
+                width: 20px;height: 20px;
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 20px;
+                text-align:center;
+                color:#fff;
+            }
+            
+            .car-list{
+                width: 400px;
+                border:1px solid #ddd;
+                background:#fff;
+                position:relative;
+                top:0px;right:276px;
+                z-index:5;
+              
+                display:none;
                 h3{
-                    height: 40px; padding-left:10px;
-                    border-bottom:1px solid #eee;
+                    height: 40px;line-height: 40px;
+                    padding-left:10px;
+                    border-bottom:1px solid #ddd;
                 }
-                .cart-list-c{
-                    
-                    // b{
-                    //     text-align:center;
-                    // }
-                    .shopcar{
-                        padding:0 10px;clear:both;
-                        
-                        li{
-                            // padding:10px 0;
-                            border-bottom:1px solid #ddd;height: 70px;
-                            img{
-                                // float:left;
-                                width: 50px;height: 50px;margin:10px;
-                            }
-                            .goodsname{
-                                // float:left;
-                                display:inline-block;
-                                width: 200px;
-                                line-height: 16px;
-                            }
-                            .goodsp{
-                                // float:left;
-                                display:inline-block;
+                
+                ul.shopcar{
+                    width: 400px;
+                    li{
+                        border-bottom:1px solid #ddd;
+                        height: 70px;width: 400px;
+                        clear:both;
+                        img{
+                            float:left;padding:0 10px;
+                            width: 50px;height: 50px;
+                        }
+                        .goodsname{
+                            width: 240px;line-height: 20px;height: 70px;padding-right:10px;
+                            float:left;
+                        }
+                        .goodsp{
+                            float:left;
+                            width: 60px;height: 70px;
+                                vertical-align:top;
+                            span{
                             }
                         }
                     }
                 }
-
-                .cart-list-b{
+                .cart-b{
                     background:#eee;
-                    
+                    height: 70px;
+                    width: 400px;
+                    overflow:hidden;
                     p{
-                        height: 20px;text-align:right;
-                        padding:10px 10px 50px 0;
-                        line-height: 20px;
-                        // display:none;
-
-                        span.sale,.ab{
-                            font-size: 18px;
-                            font-weight: bold;
+                        text-align:right;
+                        padding-right:10px;
+                        height: 30px;line-height: 30px;
+                        span{
+                            color:#c00;font-style: 16px;line-height: 30px;
                         }
                     }
                     button{
-                        position:absolute;
-                        bottom:10px;right:10px;
+                        float:right;
                         background:$mainColor;
-                        display: inline-block;
-                        height: 30px;
-                        border-radius:5px;
-                        
+                        padding:5px 10px;
+                        border-radius:3px;
                         a{
                             color:#fff;
-                            padding:10px;
                         }
                     }
                 }
             }
-            
+        } 
+
+        .my-cart:hover{
+            background:#fff;
+            i{transform:rotate(180deg)}
+            .car-list{
+                display: block;
+            }   
         }       
     }
     

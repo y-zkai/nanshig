@@ -8,7 +8,7 @@
 
 .nsg-goods .n-goods .goods-l { padding: 20px 30px 0 20px; width: 320px; height: 460px; }
 
-.nsg-goods .n-goods .goods-l img { width: 320px; height: 320px; }
+.nsg-goods .n-goods .goods-l .goods img { width: 320px; height: 320px; }
 
 .nsg-goods .n-goods .goods-l ul { height: 50px; margin: 10px 0; }
 
@@ -81,6 +81,8 @@
 .nsg-goods .n-goods .goods-c .goods-meta .goods-buy .to-buy:hover { background: #BA5838; }
 
 .nsg-goods .n-goods .goods-c .goods-meta .goods-buy .to-buy { width: 100px; height: 42px; background: #BA7538; }
+
+.nsg-goods .n-goods .goods-c .goods-meta .goods-buy .to-buy a { color: #fff; text-decoration: none; }
 
 .nsg-goods .n-goods .goods-c .goods-meta .goods-buy:hover .stock { display: block; }
 

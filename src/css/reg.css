@@ -22,7 +22,9 @@
 
 .nsg-reg .reg .reg-l .phone-login .auth-code input { width: 170px; }
 
-.nsg-reg .reg .reg-l .phone-login .test1, .nsg-reg .reg .reg-l .phone-login .test2, .nsg-reg .reg .reg-l .phone-login .test3 { position: absolute; top: 6px; right: 0; padding: 10px; background-color: #FFF5D9; display: block; font-size: 12px; display: none; }
+.nsg-reg .reg .reg-l .phone-login .test0, .nsg-reg .reg .reg-l .phone-login .test1, .nsg-reg .reg .reg-l .phone-login .test2, .nsg-reg .reg .reg-l .phone-login .test3 { position: absolute; top: 6px; right: 0; padding: 10px; background-color: #FFF5D9; font-size: 12px; display: none; }
+
+.nsg-reg .reg .reg-l .phone-login .test0 { top: -45px; right: -80px; color: #f00; font-size: 16px; }
 
 .nsg-reg .reg .reg-l .phone-login .random-code { width: 120px; height: 52px; background-color: #B5CAB5; display: block; line-height: 52px; text-align: center; font-size: 20px; position: absolute; top: 102px; right: 80px; }
 

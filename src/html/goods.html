@@ -22,10 +22,10 @@
         <div class="container clearfix">
             <div class="topbar-l fl f12">
                 您好，
-                <a href="#">马上登录</a>&nbsp;
+                <a href="login.html">马上登录</a>&nbsp;
                 <a href="#">免费注册</a>
                 <span>
-                    <a href="#" title="QQ账号登录"><i class="qq"></i></a>
+                    <a href="reg.html" title="QQ账号登录"><i class="qq"></i></a>
                     <a href="#" title="新浪微博"><i class="weibo"></i></a> 
                 </span>
             </div>
@@ -85,7 +85,7 @@
                 <div class="my-mall fl">
                     <em></em>
                     <a href="#">会员中心</a>
-                    <i></i>
+                    <i class="iconfont icon-triangle-bottom"></i>
                     <div class="mall-inc">
                         <div class="mall-inc-t"><a href="#">进入会员中心&gt;</a></div>
                         <div class="mall-inc-c">
@@ -110,18 +110,14 @@
                 <div class="my-cart fl">
                     <em></em>
                     <a href="#">我的购物车</a>
-                    <i></i>
-                    <div class="cart-list">
+                    <i class="iconfont icon-triangle-bottom"></i>
+                    <span class="shu">0</span>
+                    <div class="car-list">
                         <h3>最新加入的商品</h3>
-                        <div class="cart-list-c">
-                            <p>您的购物车中暂无商品，赶快选择心爱的商品吧！</p>
-                            <ul class="shopcar"></ul>
-                        </div>
-                        <div class="cart-list-b">
-                            <p>共<span class="qty" style="color:#c00">1</span>种商品  总计金额：
-                            <span class="ab" style="color:#c00">¥
-                            <span class="total">98.00</span></span></p>
-                            <button><a href="#">结算购物车中的商品</a></button>
+                        <ul class="shopcar"></ul>
+                        <div class="cart-b">
+                            <p>共<span class="num">0</span>种商品,总计金额：<span class="number">0</span></p>
+                            <button class="btncar"><a href="cart.html">结算购物车中的商品</a></button>
                         </div>
                     </div>
                 </div>
@@ -227,7 +223,7 @@
                                 <span>添加购物车</span>
                             </div>
                             <div class="to-buy fl">
-                                立即购买
+                                <a href="cart.html">立即购买</a>
                             </div>
                             <div class="stock">
                                 您选择的商品库存<span>668</span>件<i></i>
@@ -398,8 +394,9 @@
     </div>
     <script src="../js/jquery-3.3.1.js"></script>
     <script src="../lib/jquery-lxzoom/jquery.lxzoom.js"></script>
-    <script src="../js/goods.js"></script>
     <script src="../js/header.js"></script>
+    <script src="../js/goods.js"></script>
+    <script src="../js/cookie.js"></script>
     <script src="../js/common.js"></script>
 </body>
 </html>

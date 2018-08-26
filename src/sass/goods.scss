@@ -19,8 +19,11 @@
         .goods-l{
             padding:20px 30px 0 20px;
             width: 320px;height: 460px;
-            img{
-                width: 320px;height: 320px;
+            .goods{
+                img{
+                    width: 320px;height: 320px;
+                }
+                
             }
             ul{
                 height: 50px;
@@ -211,6 +214,10 @@
                         @extend .to-car;
                         width: 100px;height: 42px;
                         background:#BA7538;
+                        a{
+                            color:#fff;
+                            text-decoration:none;
+                        }
                     }
                 }
                 .goods-buy:hover{

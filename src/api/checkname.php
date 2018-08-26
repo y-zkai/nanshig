@@ -1,8 +1,10 @@
 <?php
-    // 引入connect.php
     include 'connect.php';
     
+    
+    
     $username = isset($_GET['username']) ? $_GET['username'] : null; 
+
 
     // 查找数据库中是否存在同名用户
     $sql = "select * from username where name='$username'";
@@ -16,5 +18,5 @@
     }else{
         echo "no";
     }
-
+ 
 ?>
