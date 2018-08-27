@@ -1,23 +1,5 @@
 jQuery($=>{   
 
-    var $checkbox = $('.table :checkbox');
-    var $checked = $checkbox.filter(':checked');
-    var $trs = $('.table tr');
-
-    // 进入页面全部选中
-    $('.table-cart :checkbox').prop('checked','checked');
-    // 全选或不选
-    $('#all').click(function(){
-        $checkbox.prop('checked',this.checked);
-        $trs[this.checked?'addClass':'removeClass']('selected');
-    });
-
-    // 复选框都选中时，全选选中，否则全选不选中
-    $checkbox.on('click',function(){
-        $('#all').prop('checked',$checked.length === $checkbox.length);
-    });
-
-
     // 获取cookie
     var goodslist = Cookie.get('goodslist');
     goodslist = JSON.parse(goodslist);
@@ -120,17 +102,22 @@ jQuery($=>{
         }
     }
 
+    var $checkbox = $('.table :checkbox');
+    var $trs = $('.table tr');
 
-    // // 移入移出效果
-    // $('.my-order').on('mouseenter',function(){
-    //     $(this).addClass('hover').find('em').animate({backgroundPosition:0},300)
-    // });
+    // 进入页面全部选中
+    $('.table-cart :checkbox').prop('checked','checked');
+    // 全选或不选
+    $('#all').click(function(){
+        $checkbox.prop('checked',this.checked)
+    });
 
-    // $('.my-order').on('mouseleave',function(){
-    //     $(this).removeClass('hover').find('em').animate({backgroundPosition:-15},300)
-    // });
+    // 复选框都被选中时，全选选中，否则全选不选中
+    $checkbox.on('click',function(){
+        var $checked = $checkbox.filter(':checked');
+        $('#all').prop('checked',$checked.length === $checkbox.length);
+    });
 
-    
     
 
 })

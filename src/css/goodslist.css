@@ -38,6 +38,12 @@
 
 .nsg-goods .sort .page-top span:hover { background: #2F97F0; border: 1px solid #f55; color: #fff; }
 
+.nsg-goods .page { margin: 30px; height: 30px; text-align: center; }
+
+.nsg-goods .page span { padding: 5px 15px; margin: 10px; background: #ddd; color: #555; cursor: pointer; }
+
+.nsg-goods .page span.activel { background: #2F97F0; color: #fff; }
+
 .nsg-goods .goodslist { box-sizing: border-box; clear: both; }
 
 .nsg-goods .goodslist .goods { cursor: pointer; float: left; width: 300px; height: 370px; margin-top: 10px; }

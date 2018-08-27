@@ -101,11 +101,26 @@
                 color:#fff;
             }
         }
+
+    }
+    .page{
+        margin:30px;
+        height: 30px;
+        text-align:center;
+        span{
+            padding:5px 15px;margin:10px;
+            background:#ddd;
+            color:#555;
+            cursor:pointer;
+        }
+        span.activel{
+            background:$mainColor;color:#fff;
+        }
     }
     
     .goodslist{
-            box-sizing:border-box;
-            clear:both;
+        box-sizing:border-box;
+        clear:both;
         .goods{
             cursor:pointer;
             float:left;

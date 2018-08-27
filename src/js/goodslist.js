@@ -1,17 +1,23 @@
 
 jQuery($=>{
     let $goodslist = $('.goodslist')
-        
+    var pageNo=1;
+    var qty=20;
     $.ajax({
         url:'../api/goodslist.php',
         dataType:'json',
-        type:'get',
-        success:function(data){
-            console.log(data)
-            render();
+        data:{
+            qty:qty,
+            pageNo:pageNo,
+        },
+        success:function(obj){
+
+            var data = obj.data;
+            // console.log(data)
+            
             function render(){
                 var res = data.map(function(item){
-                    return `<li class="goods">
+                    return `<li class="goods" data-id="${item.id}">
                         <div class="main">
                             <img src="${item.imgurl}">
                             <div class="toup">
@@ -30,18 +36,88 @@ jQuery($=>{
 
                 // 商品写入页面
                 $goodslist.html(res);
-
-                // 点击li 商品信息传到详情页
+                // 点击商品 将当前商品id传到详情页
                 $goodslist.on('click','li',function(){
-                    var params = '';
-                    var goods = data[$(this).index()];
-                    for(var key in goods){
-                        params += key + '=' + goods[key] + '&';
-                    }
-                    params = params.slice(0,-1);
+                    var params = 'id='+ data[$(this).index()].id;
                     location.href = 'goods.html?' + params;
                 })
             }   
+            render();
+
+
+            // 分页
+            let pageLen = Math.ceil(obj.total/obj.qty);
+            var page = document.querySelector('.page');
+            for(var i=0;i<pageLen;i++){
+                var span = document.createElement('span');
+                span.innerText = i+1;
+
+                // 高亮当前分页
+                if(i===obj.pageNo-1){
+                    span.className = 'activel';
+                }
+                page.appendChild(span);
+            }
+
+            // 利用事件委托实现分页切换
+            page.onclick = function(e){
+                if(e.target.parentNode.className === 'page'){
+                    // 得到点击的分页
+                    pageNo = e.target.innerText;
+
+
+                    $.ajax({
+                        url:'../api/goodslist.php',
+                        dataType:'json',
+                        data:{
+                            qty:qty,
+                            pageNo:pageNo,
+                        },
+                        success:function(str){
+                            var data = str.data;
+                            console.log(data)
+                            var res = data.map(function(item){
+                                return `<li class="goods" data-id="${item.id}">
+                                    <div class="main">
+                                        <img src="${item.imgurl}">
+                                        <div class="toup">
+                                            <p><a href="goods.html">${item.name}</a></p>
+                                            <div class="start"><span class="sale">￥${item.sale}</span><del class="price">￥${item.price}</del><em ></em></div>
+                                            <div class="contrast"><span><input type="checkbox" />&nbsp;加入对比</span></div>
+                                            <ul class="moods clearfix">
+                                                <li><span class="qty">${item.qty}</span >商品销量</li>
+                                                <li><span class="comment">${item.comment}</span>用户评论</li>
+                                            </ul>
+                                            <div class="store"><a href="#">时尚潮牌</a></div> 
+                                            <div class="to-cart"><i class="iconfont icon-gouwuche"></i>&nbsp;加入购物车</div>
+                                        </div></div>
+                                    </li>`
+                            }).join('');
+
+                            // 商品写入页面
+                            $goodslist.html(res);
+
+                            var ospan =document.querySelectorAll('.page span');
+                            for(var i=0;i<pageLen;i++){
+
+                                if(i===str.pageNo-1){
+                                    $('.page span').removeClass('activel');
+                                    ospan[i].className = 'activel';
+                                }
+                            }
+
+                            // 点击商品 将当前商品id传到详情页
+                            $goodslist.on('click','li',function(){
+                                var params = 'id='+ ( data[$(this).index()].id ) ;
+                                console.log(params)
+                                location.href = 'goods.html?' + params;
+                            })
+                        }
+                    })
+                }
+            }
+           
+
 
             // 移入移出商品的动画效果
             $goodslist.on('mouseenter','.main',function(){
